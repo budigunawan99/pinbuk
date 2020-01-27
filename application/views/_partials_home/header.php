@@ -11,8 +11,6 @@
 <!-- ========== STYLESHEETS ========== -->
 <!-- Bootstrap CSS -->
 <link href="<?php echo base_url() ?>assets/evento/assets/css/bootstrap.min.css" rel="stylesheet">
-<!-- jquery -->
-<script src="<?php echo base_url() ?>assets/evento/assets/js/jquery.min.js"></script>
 <!-- Fonts Icon CSS -->
 <link href="<?php echo base_url() ?>assets/evento/assets/css/font-awesome.min.css" rel="stylesheet">
 <link href="<?php echo base_url() ?>assets/evento/assets/css/et-line.css" rel="stylesheet">
@@ -24,11 +22,3 @@
 <link rel="stylesheet" href="<?php echo base_url() ?>assets/evento/assets/css/animate.min.css">
 <!-- Custom styles for this template -->
 <link href="<?php echo base_url() ?>assets/evento/assets/css/main.css" rel="stylesheet">
-<script type="text/javascript" src="<?php echo base_url() ?>assets/smint/js/jquery.smint.js"></script>
-<script type="text/javascript">
-	$(document).ready(function() {
-		$('.subMenu').smint({
-			'scrollSpeed': 1000
-		});
-	});
-</script>
