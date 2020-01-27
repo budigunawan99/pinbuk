@@ -66,7 +66,7 @@
                                 </h2>
                                 <strong class="cover-xl-text">conference</strong>
                                 <p class="cover-date">
-                                    12-14 February 2018 - Los Angeles, CA.
+                                    12-20 February 2018 - Los Angeles, CA.
                                 </p>
                                 <a href="#" class=" btn btn-primary btn-rounded">
                                     Buy Tickets Now
@@ -99,7 +99,7 @@
                                 DATE
                             </h5>
                             <p>
-                                12-14 february 2018
+                                12-20 february 2018
                             </p>
                         </div>
                     </div>
