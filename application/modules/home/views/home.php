@@ -134,19 +134,6 @@
                     </div>
                 </div>
 
-                <div class="col-6 col-md-3  ">
-                    <div class="icon_box_two">
-                        <i class="ion-ios-pricetag-outline"></i>
-                        <div class="content">
-                            <h5 class="box_title">
-                                tikets
-                            </h5>
-                            <p>
-                                $65 early bird
-                            </p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
