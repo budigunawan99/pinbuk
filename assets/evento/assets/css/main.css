@@ -1755,7 +1755,7 @@ header.sticky_header {
 -------------------------------------------------------- */
 footer {
   padding: 50px 0 100px;
-  background-color: #0b031b;
+  background-color: #6EBE90;
 }
 footer .footer_box {
   position: relative;
@@ -1814,21 +1814,23 @@ footer ul.instagram_list li {
   float: left;
 }
 footer .newsletter_form .form-control {
-  background-color: #1f1039;
-  border: solid 1px #1f1039;
+  background-color: #F9C37F;
+  border: solid 1px #6EBE90;
   font-weight: 500;
   color: #ffffff;
 }
 
 .copyright_footer {
-  background-color: #080113;
+  display: none;
+  background-color: #6EBE90;
+  background-image: image("copyright.png");
   padding: 15px;
 }
 .copyright_footer p {
   font-size: 13px;
   padding: 10px;
   text-transform: capitalize;
-  color: #ffffff;
+  color: #6EBE90;
 }
 .copyright_footer ul.footer_menu {
   padding: 0;
@@ -1842,10 +1844,10 @@ footer .newsletter_form .form-control {
 .copyright_footer ul.footer_menu li a {
   padding: 10px;
   text-transform: capitalize;
-  color: #838383;
+  color: #6EBE90;
 }
 .copyright_footer ul.footer_menu li a:hover {
-  color: #ffffff;
+  color: #6EBE90;
 }
 
 @media (max-width: 767px) {
@@ -2302,7 +2304,7 @@ Cover
 }
 
 .icon_box_one {
-  background-color: #f0f2f6;
+  background-color: #6EBE90;
   padding: 0;
   margin: 25px 0;
   position: relative;
@@ -2316,7 +2318,7 @@ Cover
   margin-top: -10px;
   padding: 0 15px;
   font-size: 72px;
-  color: #6EBE90;
+  color: #F9C37F;
   vertical-align: middle;
   border-radius: 4px;
   display: block;
@@ -2330,14 +2332,14 @@ Cover
   padding: 10px 25px 25px;
 }
 .icon_box_one .content h4 {
-  color: #18181c;
+  color: #ffffff;
   margin-bottom: 15px;
   text-transform: capitalize;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 .icon_box_one .content a {
-  color: #f50136;
+  color: #367160;
   font-size: 14px;
   font-weight: 600;
   text-transform: capitalize;
@@ -2347,11 +2349,12 @@ Cover
 .icon_box_one .content p {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+  color: #ffffff;
 }
 .icon_box_one:hover {
   -webkit-box-shadow: 0 10px 32px rgba(0, 0, 0, 0.25);
           box-shadow: 0 10px 32px rgba(0, 0, 0, 0.25);
-  background-color: #f50136;
+  background-color: #367160;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
@@ -2366,7 +2369,7 @@ Cover
   transition: all 0.4s ease-in-out;
 }
 .icon_box_one:hover .content p {
-  color: #ffffff;
+  color: #F9C37F;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
