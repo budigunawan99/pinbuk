@@ -2302,7 +2302,7 @@ Cover
 }
 
 .icon_box_one {
-  background-color: #f0f2f6;
+  background-color: #6EBE90;
   padding: 0;
   margin: 25px 0;
   position: relative;
@@ -2316,7 +2316,7 @@ Cover
   margin-top: -10px;
   padding: 0 15px;
   font-size: 72px;
-  color: #6EBE90;
+  color: #F9C37F;
   vertical-align: middle;
   border-radius: 4px;
   display: block;
@@ -2330,7 +2330,7 @@ Cover
   padding: 10px 25px 25px;
 }
 .icon_box_one .content h4 {
-  color: #18181c;
+  color: #ffffff;
   margin-bottom: 15px;
   text-transform: capitalize;
   -webkit-transition: all 0.4s ease-in-out;
@@ -2347,11 +2347,12 @@ Cover
 .icon_box_one .content p {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+  color: #ffffff;
 }
 .icon_box_one:hover {
   -webkit-box-shadow: 0 10px 32px rgba(0, 0, 0, 0.25);
           box-shadow: 0 10px 32px rgba(0, 0, 0, 0.25);
-  background-color: #f50136;
+  background-color: #367160;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
@@ -2366,7 +2367,7 @@ Cover
   transition: all 0.4s ease-in-out;
 }
 .icon_box_one:hover .content p {
-  color: #ffffff;
+  color: #F9C37F;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
