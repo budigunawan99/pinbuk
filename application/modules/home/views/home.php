@@ -16,7 +16,7 @@
     <!--cover section slider -->
     <section id="home" class="home-cover">
         <div class="cover_slider owl-carousel owl-theme">
-            <div class="cover_item" style="background: url('<?php echo base_url() ?>assets/evento/assets/img/bg/slider.png');">
+            <div class="cover_item" style="background: url('<?php echo base_url() ?>assets/evento/assets/img/bg/bgnew.png');">
                 <div class="slider_content">
                     <div class="slider-content-inner">
                         <div class="container">
@@ -36,7 +36,7 @@
                     </div>
                 </div>
             </div>
-            <div class="cover_item" style="background: url('<?php echo base_url() ?>assets/evento/assets/img/bg/slider.png');">
+            <div class="cover_item" style="background: url('<?php echo base_url() ?>assets/evento/assets/img/bg/bgnew.png');">
                 <div class="slider_content">
                     <div class="slider-content-inner">
                         <div class="container">
@@ -56,7 +56,7 @@
                     </div>
                 </div>
             </div>
-            <div class="cover_item" style="background: url('<?php echo base_url() ?>assets/evento/assets/img/bg/slider.png');">
+            <div class="cover_item" style="background: url('<?php echo base_url() ?>assets/evento/assets/img/bg/bgnew.png');">
                 <div class="slider_content">
                     <div class="slider-content-inner">
                         <div class="container">
@@ -134,19 +134,6 @@
                     </div>
                 </div>
 
-                <div class="col-6 col-md-3  ">
-                    <div class="icon_box_two">
-                        <i class="ion-ios-pricetag-outline"></i>
-                        <div class="content">
-                            <h5 class="box_title">
-                                tikets
-                            </h5>
-                            <p>
-                                $65 early bird
-                            </p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -154,7 +141,7 @@
 
 
     <!--event countdown -->
-    <section class="bg-img pt70 pb70" style="background-image: url('<?php echo base_url() ?>assets/evento/assets/img/bg/bg-img.png');">
+    <section class="bg-img pt70 pb70" style="background-image: url('<?php echo base_url() ?>assets/evento/assets/img/bg/bgnew.png');">
         <div class="overlay_dark"></div>
         <div class="container">
             <div class="row justify-content-center">
@@ -254,7 +241,7 @@
         <div class="container">
             <div class="section_title mb50">
                 <h3 class="title">
-                    our speakers
+                    Speakers
                 </h3>
             </div>
         </div>
@@ -357,7 +344,7 @@
         <div class="container">
             <div class="section_title mb50">
                 <h3 class="title">
-                    Pricing table
+                    Timeline Acara
                 </h3>
             </div>
 
@@ -481,7 +468,7 @@
                         <tr>
                             <th>
                                 <i class="ion-ios-calendar-outline"></i>
-                                <span>next events calendar</span>
+                                <span>Event Calendar</span>
                             </th>
                             <th></th>
                             <th></th>
@@ -598,7 +585,7 @@
         <div class="container">
             <div class="section_title mb30">
                 <h3 class="title color-light">
-                    GEt your tikets
+                    Modul
                 </h3>
             </div>
             <div class="row justify-content-center align-items-center">
@@ -606,7 +593,7 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec gravida tempus. Integer iaculis in aazzzCurabitur a pulvinar nunc. Maecenas laoreet finibus lectus, at volutpat ligula euismod.
                 </div>
                 <div class="col-md-3 text-md-right text-center">
-                    <a href="#" class="btn btn-primary btn-rounded mt30">buy now</a>
+                    <a href="#" class="btn btn-primary btn-rounded mt30">Download Modul</a>
                 </div>
             </div>
         </div>
