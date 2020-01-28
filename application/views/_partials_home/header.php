@@ -5,7 +5,7 @@
 <meta name="author" content="ColorLib">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <!-- ========== Title ========== -->
-<title> Evento - Event Html Template</title>
+<title>Milad Pinbuk 25th</title>
 <!-- ========== Favicon Ico ========== -->
 <!--<link rel="icon" href="fav.ico">-->
 <!-- ========== STYLESHEETS ========== -->
@@ -22,3 +22,4 @@
 <link rel="stylesheet" href="<?php echo base_url() ?>assets/evento/assets/css/animate.min.css">
 <!-- Custom styles for this template -->
 <link href="<?php echo base_url() ?>assets/evento/assets/css/main.css" rel="stylesheet">
+
