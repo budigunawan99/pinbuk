@@ -1660,7 +1660,7 @@ header ul.menu li a.nav-link {
   color: #ffffff;
 }
 header ul.menu li a.nav-link:hover {
-  color: #f50136;
+  color: #6EBE90;
 }
 header ul.menu .search_btn {
   padding: 16px 8px !important;
@@ -2152,7 +2152,7 @@ Cover
   color: #000000;
 }
 .cover_nav .cover_dots li.active {
-  border: solid 2px #f50136;
+  border: solid 2px #367160;
 }
 .cover_nav .cover_dots:before {
   content: " ";
@@ -2316,7 +2316,7 @@ Cover
   margin-top: -10px;
   padding: 0 15px;
   font-size: 72px;
-  color: #f50136;
+  color: #6EBE90;
   vertical-align: middle;
   border-radius: 4px;
   display: block;
@@ -2337,7 +2337,7 @@ Cover
   transition: all 0.4s ease-in-out;
 }
 .icon_box_one .content a {
-  color: #f50136;
+  color: #367160;
   font-size: 14px;
   font-weight: 600;
   text-transform: capitalize;

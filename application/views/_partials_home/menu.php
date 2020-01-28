@@ -1,5 +1,5 @@
 <!--header start here -->
-<header class="header navbar fixed-top navbar-expand-md">
+<header class="header navbar fixed-top navbar-expand-md subMenu">
     <div class="container">
         <a class="navbar-brand logo" href="#">
             <img src="<?php echo base_url() ?>assets/evento/assets/img/logo.png" alt="Evento"/>
@@ -13,21 +13,22 @@
                     <a class="nav-link active" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#s1">Speakers</a>
+                    <a class="nav-link " href="#s1">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#s2">Events</a>
+                    <a class="nav-link " href="#s2">Jadwal</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#s3">News</a>
+                    <a class="nav-link " href="#s3">Modul</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " href="#s4">Contact</a>
                 </li>
-                <li class="search_btn">
-                    <a  href="#">
-                       <i class="ion-ios-search"></i>
-                    </a>
+                <li class="nav-item">
+                    <a class="nav-link " href="#s5">Registrasi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#s5">Masuk</a>
                 </li>
             </ul>
         </div>
