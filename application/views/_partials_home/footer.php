@@ -133,8 +133,8 @@
 <!-- Custom js -->
 <script src="<?php echo base_url() ?>assets/evento/assets/js/main.js"></script>
 
-<!-- ---------------------------- SMOOTH SCROLLING ----------------------------------- -->
 <script>
+    /* ---------------------------- SMOOTH SCROLLING ----------------------------------- */
     $(document).ready(function() {
         // Add smooth scrolling to all links in navbar + footer link
         $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
@@ -156,4 +156,5 @@
             } // End if
         });
     })
+   
 </script>
