@@ -7,7 +7,7 @@
     ?>
 </head>
 
-<body>
+<body id="myPage">
     <?php
     $this->load->view("_partials_home/loader");
     $this->load->view("_partials_home/menu");
@@ -141,7 +141,7 @@
 
 
     <!--event countdown -->
-    <section id="s2" class="bg-img pt70 pb70" style="background-image: url('<?php echo base_url() ?>assets/evento/assets/img/bg/bg-img.png');">
+    <section class="bg-img pt70 pb70" style="background-image: url('<?php echo base_url() ?>assets/evento/assets/img/bg/bg-img.png');">
         <div class="overlay_dark"></div>
         <div class="container">
             <div class="row justify-content-center">
@@ -156,7 +156,7 @@
 
 
     <!--about the event -->
-    <section id="s3" class="pt100 pb100">
+    <section id="s2" class="pt100">
         <div class="container">
             <div class="section_title">
                 <h3 class="title">
@@ -237,7 +237,7 @@
 
 
     <!--speaker section-->
-    <section class="pb100">
+    <section id="s3" class="pt100">
         <div class="container">
             <div class="section_title mb50">
                 <h3 class="title">
@@ -340,7 +340,7 @@
     <!--speaker section end -->
 
     <!--Price section-->
-    <section class="pb100">
+    <section class="pt100">
         <div class="container">
             <div class="section_title mb50">
                 <h3 class="title">
@@ -460,7 +460,7 @@
     <!--price section end -->
 
     <!--event calender-->
-    <section class="pb100">
+    <section class="pt100 pb100">
         <div class="container">
             <div class="table-responsive">
                 <table class="event_calender table">
