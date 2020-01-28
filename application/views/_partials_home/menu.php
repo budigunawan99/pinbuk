@@ -1,5 +1,5 @@
 <!--header start here -->
-<header class="header navbar fixed-top navbar-expand-md">
+<header class="header navbar fixed-top navbar-expand-md subMenu">
     <div class="container">
         <a class="navbar-brand logo" href="#">
             <img src="<?php echo base_url() ?>assets/evento/assets/img/logo.png" alt="Evento"/>
