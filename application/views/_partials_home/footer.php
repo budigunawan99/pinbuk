@@ -109,25 +109,6 @@
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 </p>
             </div>
-            <div class="col-12 col-md-6 ">
-                <ul class="footer_menu">
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Speakers</a>
-                    </li>
-                    <li>
-                        <a href="#">Events</a>
-                    </li>
-                    <li>
-                        <a href="#">News</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
         </div>
     </div>
 </div>
@@ -152,8 +133,8 @@
 <!-- Custom js -->
 <script src="<?php echo base_url() ?>assets/evento/assets/js/main.js"></script>
 
-<!-- ---------------------------- SMOOTH SCROLLING ----------------------------------- -->
 <script>
+    /* ---------------------------- SMOOTH SCROLLING ----------------------------------- */
     $(document).ready(function() {
         // Add smooth scrolling to all links in navbar + footer link
         $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
@@ -175,4 +156,5 @@
             } // End if
         });
     })
+   
 </script>

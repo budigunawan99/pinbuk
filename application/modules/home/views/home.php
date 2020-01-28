@@ -88,7 +88,7 @@
     <!--cover section slider end -->
 
     <!--event info -->
-    <section class="pt100 pb100">
+    <section id="s1" class="pt100 pb100">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-6 col-md-3  ">
@@ -154,7 +154,7 @@
 
 
     <!--event countdown -->
-    <section id="s1" class="bg-img pt70 pb70" style="background-image: url('<?php echo base_url() ?>assets/evento/assets/img/bg/bg-img.png');">
+    <section class="bg-img pt70 pb70" style="background-image: url('<?php echo base_url() ?>assets/evento/assets/img/bg/bg-img.png');">
         <div class="overlay_dark"></div>
         <div class="container">
             <div class="row justify-content-center">
