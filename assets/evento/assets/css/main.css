@@ -1755,7 +1755,7 @@ header.sticky_header {
 -------------------------------------------------------- */
 footer {
   padding: 50px 0 100px;
-  background-color: #0b031b;
+  background-color: #6EBE90;
 }
 footer .footer_box {
   position: relative;
@@ -1814,21 +1814,23 @@ footer ul.instagram_list li {
   float: left;
 }
 footer .newsletter_form .form-control {
-  background-color: #1f1039;
-  border: solid 1px #1f1039;
+  background-color: #F9C37F;
+  border: solid 1px #6EBE90;
   font-weight: 500;
   color: #ffffff;
 }
 
 .copyright_footer {
-  background-color: #080113;
+  display: none;
+  background-color: #6EBE90;
+  background-image: image("copyright.png");
   padding: 15px;
 }
 .copyright_footer p {
   font-size: 13px;
   padding: 10px;
   text-transform: capitalize;
-  color: #ffffff;
+  color: #6EBE90;
 }
 .copyright_footer ul.footer_menu {
   padding: 0;
@@ -1842,10 +1844,10 @@ footer .newsletter_form .form-control {
 .copyright_footer ul.footer_menu li a {
   padding: 10px;
   text-transform: capitalize;
-  color: #838383;
+  color: #6EBE90;
 }
 .copyright_footer ul.footer_menu li a:hover {
-  color: #ffffff;
+  color: #6EBE90;
 }
 
 @media (max-width: 767px) {
