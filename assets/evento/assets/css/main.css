@@ -79,7 +79,7 @@ p {
   margin: 0 0 15px;
   line-height: 24px;
   font-weight: 400;
-  color: #838383;
+  color: #F9C37F;
 }
 p:last-child {
   margin-bottom: 0;
@@ -137,7 +137,7 @@ ul.nosyely_list {
   display: inline-block;
   padding: 25px;
   min-width: 120px;
-  background-color: #F44336;
+  background-color: #F28256;
   color: #ffffff;
   font-size: 48px;
   font-weight: 600;
@@ -1733,7 +1733,7 @@ header.sticky_header {
 }
 @media (max-width: 767px) {
   header {
-    background-color: #18181c;
+    background-color: #F28256;
     margin: 0;
     -webkit-box-shadow: 0 0 42px rgba(0, 0, 0, 0.08);
     box-shadow: 0 0 42px rgba(0, 0, 0, 0.08);
@@ -1755,7 +1755,7 @@ header.sticky_header {
 -------------------------------------------------------- */
 footer {
   padding: 50px 0 100px;
-  background-color: #6EBE90;
+  background-color: #28624E;
 }
 footer .footer_box {
   position: relative;
@@ -1814,8 +1814,8 @@ footer ul.instagram_list li {
   float: left;
 }
 footer .newsletter_form .form-control {
-  background-color: #F9C37F;
-  border: solid 1px #6EBE90;
+  background-color: #1f1039;
+  border: solid 1px #1f1039;
   font-weight: 500;
   color: #ffffff;
 }
@@ -1823,14 +1823,13 @@ footer .newsletter_form .form-control {
 .copyright_footer {
   display: none;
   background-color: #6EBE90;
-  background-image: image("copyright.png");
   padding: 15px;
 }
 .copyright_footer p {
   font-size: 13px;
   padding: 10px;
   text-transform: capitalize;
-  color: #6EBE90;
+  color: #ffffff;
 }
 .copyright_footer ul.footer_menu {
   padding: 0;
@@ -1844,10 +1843,10 @@ footer .newsletter_form .form-control {
 .copyright_footer ul.footer_menu li a {
   padding: 10px;
   text-transform: capitalize;
-  color: #6EBE90;
+  color: #838383;
 }
 .copyright_footer ul.footer_menu li a:hover {
-  color: #6EBE90;
+  color: #ffffff;
 }
 
 @media (max-width: 767px) {
@@ -1912,16 +1911,16 @@ footer .newsletter_form .form-control {
 }
 
 .btn-primary {
-  background-color: #f50136;
-  border: solid 1px #f50136;
+  background-color: #F28256;
+  border: solid 1px #F28256;
   color: #ffffff;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 .btn-primary:hover {
-  background-color: #18181c;
+  background-color: #367160;
   color: #ffffff;
-  border: solid 1px #18181c;
+  border: solid 1px #367160;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }

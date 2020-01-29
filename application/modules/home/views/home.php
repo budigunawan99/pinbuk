@@ -29,7 +29,7 @@
                                     12-14 February 2018 - Los Angeles, CA.
                                 </p>
                                 <a href="#" class=" btn btn-primary btn-rounded">
-                                    Buy Tickets Now
+                                    Registrasi
                                 </a>
                             </div>
                         </div>
@@ -48,9 +48,6 @@
                                 <p class="cover-date">
                                     12-14 February 2018 - Los Angeles, CA.
                                 </p>
-                                <a href="#" class=" btn btn-primary btn-rounded">
-                                    Buy Tickets Now
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -68,9 +65,6 @@
                                 <p class="cover-date">
                                     12-14 February 2018 - Los Angeles, CA.
                                 </p>
-                                <a href="#" class=" btn btn-primary btn-rounded">
-                                    Buy Tickets Now
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -348,7 +342,7 @@
                 </h3>
             </div>
 
-            <div class="row justify-content-center">
+            <!-- <div class="row justify-content-center">
                 <div class="col-md-4 col-12">
                     <div class="price_box active">
                         <div class="price_highlight">
@@ -454,7 +448,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
     <!--price section end -->
