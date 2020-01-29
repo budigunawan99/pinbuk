@@ -25,7 +25,7 @@
                     <a class="nav-link " href="#s4">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#s5">Registrasi</a>
+                    <a class="nav-link menu-app" href="<?php echo site_url() ?>/registrasi">Registrasi</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " href="#s5">Masuk</a>

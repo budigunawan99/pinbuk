@@ -22,4 +22,3 @@
 <link rel="stylesheet" href="<?php echo base_url() ?>assets/evento/assets/css/animate.min.css">
 <!-- Custom styles for this template -->
 <link href="<?php echo base_url() ?>assets/evento/assets/css/main.css" rel="stylesheet">
-
