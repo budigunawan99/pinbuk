@@ -16,7 +16,7 @@
     <!--cover section slider -->
     <section id="home" class="home-cover">
         <div class="cover_slider owl-carousel owl-theme">
-            <div class="cover_item" style="background: url('<?php echo base_url() ?>assets/evento/assets/img/bg/slider.png');">
+            <div class="cover_item" style="background: url('<?php echo base_url() ?>assets/evento/assets/img/bg/bgnew.png');">
                 <div class="slider_content">
                     <div class="slider-content-inner">
                         <div class="container">
@@ -36,7 +36,7 @@
                     </div>
                 </div>
             </div>
-            <div class="cover_item" style="background: url('<?php echo base_url() ?>assets/evento/assets/img/bg/slider.png');">
+            <div class="cover_item" style="background: url('<?php echo base_url() ?>assets/evento/assets/img/bg/bgnew.png');">
                 <div class="slider_content">
                     <div class="slider-content-inner">
                         <div class="container">
@@ -56,7 +56,7 @@
                     </div>
                 </div>
             </div>
-            <div class="cover_item" style="background: url('<?php echo base_url() ?>assets/evento/assets/img/bg/slider.png');">
+            <div class="cover_item" style="background: url('<?php echo base_url() ?>assets/evento/assets/img/bg/bgnew.png');">
                 <div class="slider_content">
                     <div class="slider-content-inner">
                         <div class="container">
@@ -141,7 +141,7 @@
 
 
     <!--event countdown -->
-    <section class="bg-img pt70 pb70" style="background-image: url('<?php echo base_url() ?>assets/evento/assets/img/bg/bg-img.png');">
+    <section class="bg-img pt70 pb70" style="background-image: url('<?php echo base_url() ?>assets/evento/assets/img/bg/bgnew.png');">
         <div class="overlay_dark"></div>
         <div class="container">
             <div class="row justify-content-center">
