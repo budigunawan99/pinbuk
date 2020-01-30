@@ -11,6 +11,10 @@ class Admin extends CI_Controller {
 	{
 		$this->load->view('admin');
 	}
+	public function login()
+	{
+		$this->load->view('login');
+	}
 
 
 }
