@@ -25,10 +25,7 @@
                     <a class="nav-link " href="#s4">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#s5">Registrasi</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#s5">Masuk</a>
+                    <a class="nav-link " href="#s5">Keluar</a>
                 </li>
             </ul>
         </div>

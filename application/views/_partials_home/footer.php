@@ -25,9 +25,6 @@
                                 <a href="#"><i class="ion-social-twitter"></i></a>
                             </li>
                             <li>
-                                <a href="#"><i class="ion-social-dribbble"></i></a>
-                            </li>
-                            <li>
                                 <a href="#"><i class="ion-social-instagram"></i></a>
                             </li>
                         </ul>
@@ -83,7 +80,7 @@
                 <div class="footer_box">
                     <div class="footer_header">
                         <h4 class="footer_title">
-                            subscribe to our newsletter
+                            Lokasi Event
                         </h4>
                     </div>
                     <div class="footer_box_body">
@@ -156,5 +153,5 @@
             } // End if
         });
     })
-   
+
 </script>
