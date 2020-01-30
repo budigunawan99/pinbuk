@@ -81,7 +81,6 @@
     </section>
     <!--cover section slider end -->
 
-
     <!--event countdown -->
     <section class="bg-img pt70 pb70" style="background-image: url('<?php echo base_url() ?>assets/evento/assets/img/bg/bgnew.png');">
         <div class="overlay_dark"></div>
@@ -179,7 +178,7 @@
 
 
     <!--speaker section-->
-    <section id="s3" class="pt100">
+    <section class="pt100">
         <div class="container">
             <div class="section_title mb50">
                 <h3 class="title">
@@ -282,7 +281,7 @@
     <!--speaker section end -->
 
     <!--Price section-->
-    <section class="pt100">
+    <section id="s3" class="pt100">
         <div class="container">
             <div class="section_title mb50">
                 <h3 class="title">
@@ -290,7 +289,7 @@
                 </h3>
             </div>
 
-            <!-- <div class="row justify-content-center">
+            <div class="row justify-content-center">
                 <div class="col-md-4 col-12">
                     <div class="price_box active">
                         <div class="price_highlight">
@@ -401,101 +400,11 @@
     </section>
     <!--price section end -->
 
-    <!--event calender-->
-    <section class="pt100 pb100">
-        <div class="container">
-            <div class="table-responsive">
-                <table class="event_calender table">
-                    <thead class="event_title">
-                        <tr>
-                            <th>
-                                <i class="ion-ios-calendar-outline"></i>
-                                <span>Event Calendar</span>
-                            </th>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <img src="<?php echo base_url() ?>assets/evento/assets/img/cleander/c1.png" alt="event">
-                            </td>
-                            <td class="event_date">
-                                14
-                                <span>February</span>
-                            </td>
-                            <td>
-                                <div class="event_place">
-                                    <h5>Conference in Amsterdam</h5>
-                                    <h6>08 AM - 04 PM</h6>
-                                    <p>Speaker: Daniel Hill</p>
-                                </div>
-                            </td>
-                            <td>
-                                <a href="#" class="btn btn-primary btn-rounded">Read More</a>
-                            </td>
-                            <td class="buy_link">
-                                <a href="#">buy now</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="<?php echo base_url() ?>assets/evento/assets/img/cleander/c2.png" alt="event">
-                            </td>
-                            <td class="event_date">
-                                18
-                                <span>February</span>
-                            </td>
-                            <td>
-                                <div class="event_place">
-                                    <h5>Conference in Amsterdam</h5>
-                                    <h6>08 AM - 04 PM</h6>
-                                    <p>Speaker: Daniel Hill</p>
-                                </div>
-                            </td>
-                            <td>
-                                <a href="#" class="btn btn-primary btn-rounded">Read More</a>
-                            </td>
-                            <td class="buy_link">
-                                <a href="#">buy now</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="<?php echo base_url() ?>assets/evento/assets/img/cleander/c3.png" alt="event">
-                            </td>
-                            <td class="event_date">
-                                22
-                                <span>February</span>
-                            </td>
-                            <td>
-                                <div class="event_place">
-                                    <h5>Conference in Amsterdam</h5>
-                                    <h6>08 AM - 04 PM</h6>
-                                    <p>Speaker: Daniel Hill</p>
-                                </div>
-                            </td>
-                            <td>
-                                <a href="#" class="btn btn-primary btn-rounded">Read More</a>
-                            </td>
-                            <td class="buy_link">
-                                <a href="#">buy now</a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
-    <!--event calender end -->
 
     <!--brands section -->
-    <section class="bg-gray pt100 pb100">
+    <section class="bg-gray pt50 pb100">
         <div class="container">
-            <div class="section_title mb50">
+            <div class="section_title mb100">
                 <h3 class="title">
                     our partners
                 </h3>
