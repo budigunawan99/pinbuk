@@ -188,7 +188,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html">
+              <a class="nav-link" href="admin">
                 <span class="menu-title">Dashboard</span>
                 <i class="mdi mdi-home menu-icon"></i>
               </a>
@@ -268,7 +268,7 @@
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
-            <div class="row" id="proBanner">
+            <!-- <div class="row" id="proBanner">
               <div class="col-12">
                 <span class="d-flex align-items-center purchase-popup">
                   <p>Like what you see? Check out our premium version for more.</p>
@@ -277,7 +277,7 @@
                   <i class="mdi mdi-close" id="bannerClose"></i>
                 </span>
               </div>
-            </div>
+            </div> -->
             <div class="page-header">
               <h3 class="page-title">
                 <span class="page-title-icon bg-gradient-primary text-white mr-2">
@@ -306,7 +306,7 @@
               <div class="col-md-4 stretch-card grid-margin">
                 <div class="card bg-gradient-info card-img-holder text-white">
                   <div class="card-body">
-                    <img src="a<?php echo base_url() ?>assets/AdminPinbuk/ssets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
+                    <img src="<?php echo base_url() ?>assets/AdminPinbuk/assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
                     <h4 class="font-weight-normal mb-3">Weekly Orders <i class="mdi mdi-bookmark-outline mdi-24px float-right"></i>
                     </h4>
                     <h2 class="mb-5">45,6334</h2>
@@ -328,7 +328,7 @@
             </div>
             <div class="row">
               <div class="col-md-7 grid-margin stretch-card">
-                <div class="card">
+                <!-- <div class="card">
                   <div class="card-body">
                     <div class="clearfix">
                       <h4 class="card-title float-left">Visit And Sales Statistics</h4>
@@ -336,9 +336,9 @@
                     </div>
                     <canvas id="visit-sale-chart" class="mt-4"></canvas>
                   </div>
-                </div>
+                </div> -->
               </div>
-              <div class="col-md-5 grid-margin stretch-card">
+              <!-- <div class="col-md-5 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
                     <h4 class="card-title">Traffic Sources</h4>
@@ -346,7 +346,7 @@
                     <div id="traffic-chart-legend" class="rounded-legend legend-vertical legend-bottom-left pt-4"></div>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
             <div class="row">
               <div class="col-12 grid-margin">
