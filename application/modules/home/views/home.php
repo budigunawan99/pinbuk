@@ -81,58 +81,6 @@
     </section>
     <!--cover section slider end -->
 
-    <!--event info -->
-    <section id="s1" class="pt100 pb100">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-6 col-md-3  ">
-                    <div class="icon_box_two">
-                        <i class="ion-ios-calendar-outline"></i>
-                        <div class="content">
-                            <h5 class="box_title">
-                                DATE
-                            </h5>
-                            <p>
-                                12-14 february 2018
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-3  ">
-                    <div class="icon_box_two">
-                        <i class="ion-ios-location-outline"></i>
-                        <div class="content">
-                            <h5 class="box_title">
-                                location
-                            </h5>
-                            <p>
-                                Los Angeles, CA.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-3  ">
-                    <div class="icon_box_two">
-                        <i class="ion-ios-person-outline"></i>
-                        <div class="content">
-                            <h5 class="box_title">
-                                speakers
-                            </h5>
-                            <p>
-                                Natalie James
-                                + guests
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!--event info end -->
-
 
     <!--event countdown -->
     <section class="bg-img pt70 pb70" style="background-image: url('<?php echo base_url() ?>assets/evento/assets/img/bg/bgnew.png');">
