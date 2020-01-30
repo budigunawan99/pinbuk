@@ -111,7 +111,7 @@
                             </td>
                             <td>
                                 <div class="event_place">
-                                    <h5>Conference in Amsterdam</h5>
+                                    <h5>Seminar Milad Pinbuk</h5>
                                     <h6>08 AM - 04 PM</h6>
                                     <p>Speaker: Daniel Hill</p>
                                 </div>
@@ -174,7 +174,7 @@
     </section>
     <!--event calender end -->
 
-    
+
     <?php
     $this->load->view("_partials_home/footer");
     ?>
