@@ -436,7 +436,7 @@
         <div class="container">
             <div class="section_title mb30">
                 <h3 class="title color-light">
-                    Modul
+                    Panduan Acara
                 </h3>
             </div>
             <div class="row justify-content-center align-items-center">
@@ -444,7 +444,7 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec gravida tempus. Integer iaculis in aazzzCurabitur a pulvinar nunc. Maecenas laoreet finibus lectus, at volutpat ligula euismod.
                 </div>
                 <div class="col-md-3 text-md-right text-center">
-                    <a href="#" class="btn btn-primary btn-rounded mt30">Download Modul</a>
+                    <a href="#" class="btn btn-primary btn-rounded mt30">Lihat Panduan Acara</a>
                 </div>
             </div>
         </div>

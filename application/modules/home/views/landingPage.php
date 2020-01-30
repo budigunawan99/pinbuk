@@ -22,9 +22,9 @@
                         <div class="container">
                             <div class="slider-content-center">
                                 <h2 class="cover-title">
-                                    Prepare yourself for the
+                                    Seminar dan Workshop
                                 </h2>
-                                <strong class="cover-xl-text">conference</strong>
+                                <strong class="cover-xl-text">Pinbuk 25th</strong>
                                 <p class="cover-date">
                                     12-14 February 2018 - Los Angeles, CA.
                                 </p>
