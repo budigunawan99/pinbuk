@@ -16,10 +16,10 @@
                     <a class="nav-link " href="#s2">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#s2">Jadwal</a>
+                    <a class="nav-link " href="#s3">Jadwal</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#s3">Modul</a>
+                    <a class="nav-link " href="#s4">Modul</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " href="#s4">Contact</a>
