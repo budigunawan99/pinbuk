@@ -352,16 +352,16 @@
               <div class="col-12 grid-margin">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Recent Tickets</h4>
+                    <h4 class="card-title">Pendaftar Baru</h4>
                     <div class="table-responsive">
                       <table class="table">
                         <thead>
                           <tr>
-                            <th> Assignee </th>
-                            <th> Subject </th>
-                            <th> Status </th>
-                            <th> Last Update </th>
-                            <th> Tracking ID </th>
+                            <th> Nama </th>
+                            <th> Email </th>
+                            <th> Kelas Workshop </th>
+                            <th> Status Pembayaran </th>
+                            <!-- <th> Tracking ID </th> -->
                           </tr>
                         </thead>
                         <tbody>
@@ -369,41 +369,41 @@
                             <td>
                               <img src="<?php echo base_url() ?>assets/AdminPinbuk/assets/images/faces/face1.jpg" class="mr-2" alt="image"> David Grey </td>
                             <td> Fund is not recieved </td>
+                            <td> Dec 5, 2017 </td>
                             <td>
                               <label class="badge badge-gradient-success">DONE</label>
                             </td>
-                            <td> Dec 5, 2017 </td>
-                            <td> WD-12345 </td>
+                            <!-- <td> WD-12345 </td> -->
                           </tr>
                           <tr>
                             <td>
                               <img src="<?php echo base_url() ?>assets/AdminPinbuk/assets/images/faces/face2.jpg" class="mr-2" alt="image"> Stella Johnson </td>
                             <td> High loading time </td>
+                            <td> Dec 12, 2017 </td>
                             <td>
                               <label class="badge badge-gradient-warning">PROGRESS</label>
                             </td>
-                            <td> Dec 12, 2017 </td>
-                            <td> WD-12346 </td>
+                            <!-- <td> WD-12346 </td> -->
                           </tr>
                           <tr>
                             <td>
                               <img src="<?php echo base_url() ?>assets/AdminPinbuk/assets/images/faces/face3.jpg" class="mr-2" alt="image"> Marina Michel </td>
                             <td> Website down for one week </td>
+                            <td> Dec 16, 2017 </td>
                             <td>
                               <label class="badge badge-gradient-info">ON HOLD</label>
                             </td>
-                            <td> Dec 16, 2017 </td>
-                            <td> WD-12347 </td>
+                            <!-- <td> WD-12347 </td> -->
                           </tr>
                           <tr>
                             <td>
                               <img src="<?php echo base_url() ?>assets/AdminPinbuk/assets/images/faces/face4.jpg" class="mr-2" alt="image"> John Doe </td>
                             <td> Loosing control on server </td>
+                            <td> Dec 3, 2017 </td>
                             <td>
                               <label class="badge badge-gradient-danger">REJECTED</label>
                             </td>
-                            <td> Dec 3, 2017 </td>
-                            <td> WD-12348 </td>
+                            <!-- <td> WD-12348 </td> -->
                           </tr>
                         </tbody>
                       </table>
@@ -437,7 +437,7 @@
                         <img src="<?php echo base_url() ?>assets/AdminPinbuk/assets/images/dashboard/img_3.jpg" class="mw-100 w-100 rounded" alt="image">
                       </div>
                     </div>
-                    <div class="d-flex mt-5 align-items-top">
+                    <!-- <div class="d-flex mt-5 align-items-top">
                       <img src="<?php echo base_url() ?>assets/AdminPinbuk/assets/images/faces/face3.jpg" class="img-sm rounded-circle mr-3" alt="image">
                       <div class="mb-0 flex-grow">
                         <h5 class="mr-2 mb-2">School Website - Authentication Module.</h5>
@@ -446,7 +446,7 @@
                       <div class="ml-auto">
                         <i class="mdi mdi-heart-outline text-muted"></i>
                       </div>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
               </div>
@@ -455,15 +455,15 @@
               <div class="col-md-7 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Project Status</h4>
+                    <h4 class="card-title">Proposal Upload</h4>
                     <div class="table-responsive">
                       <table class="table">
                         <thead>
                           <tr>
                             <th> # </th>
-                            <th> Name </th>
-                            <th> Due Date </th>
-                            <th> Progress </th>
+                            <th> Nama </th>
+                            <th> Judul Proposal </th>
+                            <th> File Proposal </th>
                           </tr>
                         </thead>
                         <tbody>
@@ -478,7 +478,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td> 2 </td>
+                            <td> 1 </td>
                             <td> Messsy Adam </td>
                             <td> Jul 01, 2015 </td>
                             <td>
@@ -533,7 +533,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-5 grid-margin stretch-card">
+              <!-- <div class="col-md-5 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
                     <h4 class="card-title text-white">Todo</h4>
@@ -589,7 +589,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
           <!-- content-wrapper ends -->
