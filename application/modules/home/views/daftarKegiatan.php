@@ -98,6 +98,7 @@
                             <th></th>
                             <th></th>
                             <th></th>
+
                         </tr>
                     </thead>
                     <tbody>
@@ -117,10 +118,10 @@
                                 </div>
                             </td>
                             <td>
-                                <a href="#" class="btn btn-primary btn-rounded">Read More</a>
+                                <a href="#" class="btn btn-primary btn-rounded">Selesai</a>
                             </td>
                             <td class="buy_link">
-                                <a href="#">buy now</a>
+                                <a href="#">Unduh Modul</a>
                             </td>
                         </tr>
                         <tr>
@@ -139,32 +140,10 @@
                                 </div>
                             </td>
                             <td>
-                                <a href="#" class="btn btn-primary btn-rounded">Read More</a>
+                                <a href="#" class="btn btn-primary btn-rounded">Menunggu Konfirmasi</a>
                             </td>
                             <td class="buy_link">
-                                <a href="#">buy now</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="<?php echo base_url() ?>assets/evento/assets/img/cleander/c3.png" alt="event">
-                            </td>
-                            <td class="event_date">
-                                22
-                                <span>February</span>
-                            </td>
-                            <td>
-                                <div class="event_place">
-                                    <h5>Conference in Amsterdam</h5>
-                                    <h6>08 AM - 04 PM</h6>
-                                    <p>Speaker: Daniel Hill</p>
-                                </div>
-                            </td>
-                            <td>
-                                <a href="#" class="btn btn-primary btn-rounded">Read More</a>
-                            </td>
-                            <td class="buy_link">
-                                <a href="#">buy now</a>
+                                <a href="#">Unduh Modul</a>
                             </td>
                         </tr>
                     </tbody>

@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class landingPage extends CI_Controller {
+class LandingPage extends CI_Controller {
 
 	function __Construct(){
 		parent::__Construct ();
