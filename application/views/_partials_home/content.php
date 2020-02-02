@@ -13,24 +13,28 @@
                     <a class="nav-link active" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#s1">Speakers</a>
+                    <a class="nav-link " href="#s1">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#s2">Events</a>
+                    <a class="nav-link " href="#s2">Jadwal</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#s3">News</a>
+                    <a class="nav-link " href="#s3">Modul</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " href="#s4">Contact</a>
                 </li>
-                <li class="search_btn">
-                    <a  href="#">
-                       <i class="ion-ios-search"></i>
-                    </a>
+                <li class="nav-item">
+                    <a class="nav-link menu-app" href="<?php echo site_url() ?>/account">Registrasi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="<?php echo site_url() ?>/account/logindirect">Masuk</a>
                 </li>
             </ul>
         </div>
     </div>
 </header>
 <!--header end here-->
+<div id="container-content">
+     <?php echo $content ?>
+ </div>
