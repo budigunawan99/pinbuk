@@ -180,8 +180,10 @@ class Account extends CI_Controller
                 //redirect ke halaman login
                 // redirect(site_url('warkop/login'));
             }
-            echo json_encode($msg);
+        }else{
+            $msg = "Isi form login dengan benar !";
         }
+        echo json_encode($msg);
     }
 
     public function logout()
