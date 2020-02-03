@@ -24,4 +24,14 @@ class Userpage extends CI_Controller
 			$this->load->view('v_userpage', $content);
 		}
 	}
+
+	public function beranda(){
+		$content = $this->load->view('userpage', '', true);
+		$this->output->set_output($content);
+	}
+
+	public function daftarworkshop(){
+		$content = $this->load->view('daftarworkshop', '', true);
+		$this->output->set_output($content);
+	}
 }

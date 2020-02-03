@@ -41,6 +41,11 @@
             $query = $this->db->query('SELECT id FROM user where email = "' . $email . '"');
             return $query->row()->id;
         }
+
+        public function getNamaByEmail($email){
+            $query = $this->db->query('SELECT nama FROM user where email = "' . $email . '"');
+            return $query->row()->nama;
+        }
         //  function Save($data,$table,$param)
         // {
         //     $query=$this->db->update($table,$data,array('gid' => $param["gid"],'tahun'=>$param["tahun"]));

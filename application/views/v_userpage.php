@@ -5,6 +5,14 @@
     <?php
     $this->load->view("_partials_home/header");
     ?>
+    <style>
+        .avatar img {
+            float: left;
+            max-width: 1.5rem;
+            margin-right: 3px;
+            border-radius: 50%;
+        }
+    </style>
 </head>
 
 <body id="myPage">
@@ -16,6 +24,7 @@
     <?php
     $this->load->view("_partials_home/footer");
     ?>
+    <script src="<?php echo base_url() ?>assets/evento/assets/js/jquery.validate.min.js"></script>
     <script>
         function update(z) {
             nav = z;
@@ -39,6 +48,27 @@
         }
 
         $(document).ready(function() {
+            $('.menu-app').click(function(event) {
+                event.preventDefault();
+                $('.loader').show();
+                nav = $(this).data("val");
+                // console.log("update", BASE_URL + nav);
+
+                $.ajax({
+                    type: "POST",
+                    url: BASE_URL + nav,
+                    cache: false,
+                    success: function(data) {
+                        $('.loader').hide();
+                        // console.log("success", data);
+                        $("#container-content").html(data);
+                    },
+                    error: function(data) {
+                        console.log("error", data);
+
+                    }
+                });
+            });
 
             $('.logout').click(function(event) {
                 event.preventDefault();
@@ -55,15 +85,18 @@
                     }
                 }).then(function(isConfirm) {
                     if (isConfirm) {
-                        $('.loader').show();
                         $.ajax({
                             type: "POST",
                             url: BASE_URL + nav,
                             cache: false,
                             success: function(data) {
                                 var str = data.replace(/\"/g, "");
-                                $('.loader').hide();
-                                swal("Berhasil", str, "success");
+                                swal(str, {
+                                    title: "Berhasil",
+                                    buttons: false,
+                                    timer: 1000,
+                                    icon: "success",
+                                });
                                 window.location.href = BASE_URL + "home";
                                 // console.log("success", data);
                             },
