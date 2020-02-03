@@ -161,9 +161,10 @@ class Account extends CI_Controller
                 $status = $this->M_account->checkActivate($email);
                 if ($status == true) {
                     $id   =  $this->M_account->getIdByEmail($email);
-
+                    $nama =  $this->M_account->getNamaByEmail($email);
                     //set session user
                     $this->session->set_userdata('email', $email);
+                    $this->session->set_userdata('nama', $nama);
                     $this->session->set_userdata('id_login_cache', uniqid(rand()));
                     $this->session->set_userdata('id', $id);
                     $msg = "Anda berhasil login !";
@@ -191,6 +192,7 @@ class Account extends CI_Controller
         $this->session->unset_userdata('email');
         $this->session->unset_userdata('id_login_cache');
         $this->session->unset_userdata('id');
+        $this->session->unset_userdata('nama');
         $msg = "Anda berhasil logout";
         echo json_encode($msg);
     }
