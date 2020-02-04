@@ -6,6 +6,10 @@
     ?>
   </head>
   <body>
+    <!-- <h1>Login berhasil !</h1>
+    <h2>Hai, <?php echo $this->session->userdata("nama"); ?></h2>
+    <a href="<?php echo base_url('login/logout'); ?>">Logout</a>
+     -->
     <div class="container-scroller">
       <!-- partial:partials/_navbar.html -->
       <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">

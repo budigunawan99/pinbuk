@@ -5,16 +5,21 @@ class Admin extends CI_Controller {
 
 	function __Construct(){
 		parent::__Construct ();
+
+		// if($this->session->userdata('status') != "login"){
+		// 	redirect(base_url("login"));
+		// }
 	}
 
 	public function index()
 	{
 		$this->load->view('admin');
+		
 	}
-	public function login()
-	{
-		$this->load->view('login');
-	}
+	// public function login()
+	// {
+	// 	$this->load->view('v_admin');
+	// }
 
 
 }
