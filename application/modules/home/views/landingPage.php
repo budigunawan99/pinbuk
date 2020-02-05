@@ -26,7 +26,10 @@
                                 </h2>
                                 <strong class="cover-xl-text">NASIONAL</strong>
                                 <p class="cover-date">
-                                    Tema: "Pemberdayaan Sosial Ekonomi"
+                                  Tema: "Pemberdayaan Sosial Ekonomi"
+                                </p>
+                                <p class="cover-date">
+                                (Tanggal Acara)
                                 </p>
                                 <a href="#" class=" btn btn-primary btn-rounded">
                                     Registrasi
@@ -40,13 +43,16 @@
                 <div class="slider_content">
                     <div class="slider-content-inner">
                         <div class="container">
-                            <div class="slider-content-left">
+                            <div class="slider-content-center">
                                 <h2 class="cover-title">
-                                    Prepare yourself for the
+                                    Seminar
                                 </h2>
-                                <strong class="cover-xl-text">conference</strong>
+                                <strong class="cover-xl-text">Nasional</strong>
                                 <p class="cover-date">
-                                    12-14 February 2018 - Los Angeles, CA.
+                                    INKLUSI KEUANGAN  MELALUI PENGEMBANGAN BMT BERBASIS RUMAH IBADAH DAN KELURAHAN  UNTUK PENGENTASAN KEMISKINAN
+                                </p>
+                                <p class="cover-date">
+                                  (Tanggal Acara)
                                 </p>
                             </div>
                         </div>
@@ -59,11 +65,14 @@
                         <div class="container">
                             <div class="slider-content-center">
                                 <h2 class="cover-title">
-                                    Prepare yourself for the
+                                    Workshop
                                 </h2>
-                                <strong class="cover-xl-text">conference</strong>
+                                <strong class="cover-xl-text">Nasional</strong>
                                 <p class="cover-date">
-                                    12-14 February 2018 - Los Angeles, CA.
+                                    INKLUSI KEUANGAN  MELALUI PENGEMBANGAN BMT BERBASIS RUMAH IBADAH DAN KELURAHAN  UNTUK PENGENTASAN KEMISKINAN
+                                </p>
+                                <p class="cover-date">
+                                  (Tanggal Acara)
                                 </p>
                             </div>
                         </div>
