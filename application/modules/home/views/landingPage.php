@@ -24,9 +24,9 @@
                                 <h2 class="cover-title">
                                     Seminar dan Workshop
                                 </h2>
-                                <strong class="cover-xl-text">Pinbuk 25th</strong>
+                                <strong class="cover-xl-text">NASIONAL</strong>
                                 <p class="cover-date">
-                                    12-14 February 2018 - Los Angeles, CA.
+                                    Tema: "Pemberdayaan Sosial Ekonomi"
                                 </p>
                                 <a href="#" class=" btn btn-primary btn-rounded">
                                     Registrasi
