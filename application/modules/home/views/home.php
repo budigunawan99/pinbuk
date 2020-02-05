@@ -28,6 +28,9 @@
                                 <p class="cover-date">
                                   Tema: "Pemberdayaan Sosial Ekonomi"
                                 </p>
+                                <p class="cover-date">
+                                (Tanggal Acara)
+                                </p>
                                 <a href="#" class=" btn btn-primary btn-rounded">
                                     Registrasi
                                 </a>
@@ -40,13 +43,16 @@
                 <div class="slider_content">
                     <div class="slider-content-inner">
                         <div class="container">
-                            <div class="slider-content-left">
+                            <div class="slider-content-center">
                                 <h2 class="cover-title">
                                     Seminar
                                 </h2>
                                 <strong class="cover-xl-text">Nasional</strong>
                                 <p class="cover-date">
-                                    12-14 February 2018 - Los Angeles, CA.
+                                    INKLUSI KEUANGAN  MELALUI PENGEMBANGAN BMT BERBASIS RUMAH IBADAH DAN KELURAHAN  UNTUK PENGENTASAN KEMISKINAN
+                                </p>
+                                <p class="cover-date">
+                                  (Tanggal Acara)
                                 </p>
                             </div>
                         </div>
@@ -59,11 +65,14 @@
                         <div class="container">
                             <div class="slider-content-center">
                                 <h2 class="cover-title">
-                                    Prepare yourself for the
+                                    Workshop
                                 </h2>
-                                <strong class="cover-xl-text">conference</strong>
+                                <strong class="cover-xl-text">Nasional</strong>
                                 <p class="cover-date">
-                                    12-14 February 2018 - Los Angeles, CA.
+                                    INKLUSI KEUANGAN  MELALUI PENGEMBANGAN BMT BERBASIS RUMAH IBADAH DAN KELURAHAN  UNTUK PENGENTASAN KEMISKINAN
+                                </p>
+                                <p class="cover-date">
+                                  (Tanggal Acara)
                                 </p>
                             </div>
                         </div>
@@ -112,7 +121,7 @@
                 </div>
                 <div class="col-12 col-md-6">
                     <p>
-                        In rhoncus massa nec sollicitudin. Ut hendrerit hendrerit nisl a accumsan. Pellentesque convallis consectetur tortor id placerat. Curabitur a pulvinar nunc. Maecenas laoreet finibus lectus, at volutpat ligula euismod quis. Maecenas ornare, ex in malesuada tempus.
+                        PINBUK didirikan oleh Ketua Umum ICMI, Prof. DR Ing.- B.J. Habibie,  Ketua Umum Majelis Ulama Indonesia (MUI), alm. K.H. Hasan Basri, dan Direktur Utama Bank Muamalat Indonesia Zainulbahar Noor, SE., memiliki perwakilan-perwakilan di seluruh provinsi dan telah mendirikan lebih dari 3900 BMT di seluruh Indonesia.  PINBUK telah menginisiasi mendirikan Inkopsyah BMT dan ABSINDO (Asosiasi BMT Se- Indonesia).
                     </p>
                 </div>
             </div>
@@ -127,7 +136,6 @@
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec graviante.
                             </p>
-                            <a href="#">read more</a>
                         </div>
                     </div>
                 </div>
@@ -136,11 +144,10 @@
                     <div class="icon_box_one">
                         <i class="lnr lnr-rocket"></i>
                         <div class="content">
-                            <h4>8 hrs Marathon</h4>
+                            <h4>Best Practices</h4>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec graviante.
+                              	Mendapatkan pengalaman dalam pengentasan kemiskinan dan pemberdayaan masyarakat melalui BMT berbasis rumah ibadah dan kelurahan/desa, mendukung program inklusi keuangan.
                             </p>
-                            <a href="#">read more</a>
                         </div>
                     </div>
                 </div>
@@ -149,11 +156,10 @@
                     <div class="icon_box_one">
                         <i class="lnr lnr-bullhorn"></i>
                         <div class="content">
-                            <h4>Live Broadcast</h4>
+                            <h4>Transaksi Syariah</h4>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec graviante.
+                              Mendapatkan pemahaman mengenai berbagai transaksi berbasis syariah seperti ZIS, wakaf tunai, mudhorobah, sebagai pendekatan pemberdayaan masyarakat.
                             </p>
-                            <a href="#">read more</a>
                         </div>
                     </div>
                 </div>
@@ -162,11 +168,10 @@
                     <div class="icon_box_one">
                         <i class="lnr lnr-clock"></i>
                         <div class="content">
-                            <h4>Early Bird</h4>
+                            <h4>Perancangan dan Penganggaran</h4>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec graviante.
+                              Berbagi pengalaman dalam hal menginisiasi,menyusun perencanaan,penganggaran program dan memetakan berbagai sumber daya pendukung program
                             </p>
-                            <a href="#">read more</a>
                         </div>
                     </div>
                 </div>
@@ -192,7 +197,7 @@
                     <div class="speaker_img">
                         <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s1.png" alt="speaker name">
                         <div class="info_box">
-                            <h5 class="name">Patricia Stone</h5>
+                            <h5 class="name">Aslichan Burhan</h5>
                             <p class="position">CEO Company</p>
                         </div>
                     </div>
@@ -203,7 +208,7 @@
                     <div class="speaker_img">
                         <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s2.png" alt="speaker name">
                         <div class="info_box">
-                            <h5 class="name">James Oliver</h5>
+                            <h5 class="name">Ridho Nugraha</h5>
                             <p class="position">CEO Company</p>
                         </div>
                     </div>
@@ -215,7 +220,7 @@
                     <div class="speaker_img">
                         <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s3.png" alt="speaker name">
                         <div class="info_box">
-                            <h5 class="name">Carla Banks</h5>
+                            <h5 class="name">Deny Irawan</h5>
                             <p class="position">CEO Company</p>
                         </div>
                     </div>
@@ -226,7 +231,7 @@
                     <div class="speaker_img">
                         <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s4.png" alt="speaker name">
                         <div class="info_box">
-                            <h5 class="name">William Smith</h5>
+                            <h5 class="name">Syamsul Hadi</h5>
                             <p class="position">CEO Company</p>
                         </div>
                     </div>
@@ -237,7 +242,7 @@
                     <div class="speaker_img">
                         <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s5.png" alt="speaker name">
                         <div class="info_box">
-                            <h5 class="name">Jessica Black</h5>
+                            <h5 class="name">Boy Konga Kairosa</h5>
                             <p class="position">CEO Company</p>
                         </div>
                     </div>
@@ -248,7 +253,7 @@
                     <div class="speaker_img">
                         <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s6.png" alt="speaker name">
                         <div class="info_box">
-                            <h5 class="name">Patricia Stone</h5>
+                            <h5 class="name">Rahmatul Firdaus</h5>
                             <p class="position">CEO Company</p>
                         </div>
                     </div>
@@ -259,7 +264,7 @@
                     <div class="speaker_img">
                         <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s7.png" alt="speaker name">
                         <div class="info_box">
-                            <h5 class="name">Duncan Stan</h5>
+                            <h5 class="name">Agustyanto</h5>
                             <p class="position">CEO Company</p>
                         </div>
                     </div>
@@ -270,8 +275,96 @@
                     <div class="speaker_img">
                         <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s8.png" alt="speaker name">
                         <div class="info_box">
-                            <h5 class="name">Patricia Stone</h5>
+                            <h5 class="name">Budi Purnomo</h5>
                             <p class="position">CEO Company</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="speaker_box">
+                    <div class="speaker_img">
+                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s8.png" alt="speaker name">
+                        <div class="info_box">
+                            <h5 class="name">Budi Herdiansyah</h5>
+                            <p class="position">CEO Company</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="speaker_box">
+                    <div class="speaker_img">
+                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s8.png" alt="speaker name">
+                        <div class="info_box">
+                            <h5 class="name">Dr. Ahmad Subagyo</h5>
+                            <p class="position">CEO Company</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="speaker_box">
+                    <div class="speaker_img">
+                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s8.png" alt="speaker name">
+                        <div class="info_box">
+                            <h5 class="name">Ir. Riza Rahman, M.Sc </h5>
+                            <p class="position">Dosen UMN</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="speaker_box">
+                    <div class="speaker_img">
+                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s8.png" alt="speaker name">
+                        <div class="info_box">
+                            <h5 class="name">Hidayatullah</h5>
+                            <p class="position">CEO Company</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="speaker_box">
+                    <div class="speaker_img">
+                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s8.png" alt="speaker name">
+                        <div class="info_box">
+                            <h5 class="name">Hidayaturrahman</h5>
+                            <p class="position">CEO Company</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="speaker_box">
+                    <div class="speaker_img">
+                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s8.png" alt="speaker name">
+                        <div class="info_box">
+                            <h5 class="name">Bambang Widuri</h5>
+                            <p class="position">CEO Company</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="speaker_box">
+                    <div class="speaker_img">
+                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s8.png" alt="speaker name">
+                        <div class="info_box">
+                            <h5 class="name">Chrisna Wibowo</h5>
+                            <p class="position">CEO Company</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="speaker_box">
+                    <div class="speaker_img">
+                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s8.png" alt="speaker name">
+                        <div class="info_box">
+                            <h5 class="name">Agus Kholiq</h5>
+                            <p class="position">BUMDES Desa Wisata, Sleman</p>
                         </div>
                     </div>
                 </div>
