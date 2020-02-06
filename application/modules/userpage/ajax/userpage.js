@@ -14,13 +14,12 @@ function prevTab(tab) {
 $("#form1").validate({
     rules: {
         nama: "required",
-        tgl_lahir: "required",
         email: "required",
         alamat: "required",
         jenis_workshop: "required"
     },
     errorElement: "em",
-    errorPlacement: function(error, element) {
+    errorPlacement: function (error, element) {
         // Add the `help-block` class to the error element
         error.addClass("help-block");
 
@@ -30,4 +29,34 @@ $("#form1").validate({
             error.insertAfter(element);
         }
     }
+});
+
+$(document).ready(function () {
+    $('#form1').on('submit', function (event) {
+		event.preventDefault();
+		$.ajax({
+			url: BASE_URL+"Userpage/input",
+			method: "POST",
+			data: new FormData(this),
+			contentType: false,
+			cache: false,
+			processData: false,
+			success: function(data) {
+				var str = data.replace(/\"/g,"");;
+				if (str == "Data berhasil dimasukkan"){
+					swal("Berhasil", str, "success");
+					update("Userpage/daftarworkshop")
+				} else {
+					document.getElementById('#alert2').style.display = 'block';
+					alert = document.getElementById('#msg');
+					alert.innerHTML = '<strong>'+str+'</strong>';
+				}
+    	},
+			error: function (XMLHttpRequest, textStatus, errorThrown) {
+				swal("Status: " + textStatus, "erro");
+				swal("Error: " + errorThrown, "error");
+			},
+		});
+	});
+
 });

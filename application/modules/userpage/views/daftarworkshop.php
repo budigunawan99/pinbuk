@@ -1,5 +1,5 @@
 <!--Price section-->
-<section class="pt100">
+<section class="pt100 pb100">
     <div class="container">
         <div class="section_title mb50">
             <h3 class="title">
@@ -24,32 +24,43 @@
                                 </ul>
                             </div>
                             <div class="card-body">
-                                <form id="form1" method="post" enctype="multipart/form-data" action="<?php echo base_url('index.php/Short_term/input'); ?>">
+                                <form id="form1" method="post" enctype="multipart/form-data" action="<?php echo base_url('index.php/Userpage/input'); ?>">
                                     <div class="tab-content" id="myTabContent">
                                         <div class="tab-pane fade show active" id="tabs-0" role="tabpanel" aria-labelledby="data-mahasiswa">
                                             <div class="tab-content" id="v-pills-tabContent">
                                                 <div class="form-group">
                                                     <label for="nama">Nama:</label>
-                                                    <input type="text" name="nama" class="form-control" id="nama" required>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="Tgl_lahir">Tanggal lahir:</label>
-                                                    <input type="date" name="tgl_lahir" class="form-control" id="tgl_lahir" required>
+                                                    <input type="text" name="nama" value="<?php echo $this->session->userdata('nama'); ?>" class="form-control" id="nama" readonly="readonly">
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="email">Email:</label>
-                                                    <input type="email" name="email" class="form-control" id="email" required>
+                                                    <input type="email" name="email" value="<?php echo $this->session->userdata('email'); ?>" class="form-control" id="email" readonly="readonly">
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="univ_asal">Alamat:</label>
-                                                    <input type="text" name="alamat" class="form-control" id="alamat" required>
+                                                    <input type="text" name="alamat" class="formdaftar form-control" id="alamat" required>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="workshop">Jenis workshop:</label>
-                                                    <select id="jenis_workshop" name="jenis_workshop" class="form-control" required>
-                                                        <option value="Workshop 1">Workshop 1</option>
-                                                        <option value="Workshop 2">Workshop 2</option>
-                                                        <option value="Workshop 3">Workshop 3</option>
+                                                    <label for="workshop">Workshop:</label>
+                                                    <select id="jenis_workshop" name="jenis_workshop" class="formdaftar form-control" required>
+                                                        <option value="" selected>Pilih workshop</option>
+                                                        <?php
+                                                        foreach ($namaworkshop as $w) {
+                                                        ?>
+                                                            <option value="<?php echo $w->id_workshop ?>">
+                                                                <?php 
+                                                                    $str = $w->nama;
+                                                                    $splitted = explode(" ", $str); 
+                                                                    if(count($splitted) > 3){
+                                                                        echo $splitted[0]." ".$splitted[1]." ...";
+                                                                    }else{
+                                                                        echo $str;
+                                                                    };
+                                                                ?>
+                                                            </option>
+                                                        <?php
+                                                        }
+                                                        ?>
                                                     </select>
                                                 </div>
                                                 <a onclick="nextTab('1')" href="#" class="btn btn-primary">next</a>
@@ -57,13 +68,13 @@
                                         </div>
 
                                         <div class="tab-pane fade" id="tabs-1" role="tabpanel" aria-labelledby="data-dokumen">
-                                            <div class="form-group">
+                                            <!-- <div class="form-group">
                                                 <label for="file">Masukkan Scan KTP :</label>
                                                 <input type="file" name="dokumen0" class="form-control" required>
-                                            </div>
+                                            </div> -->
                                             <div class="form-group">
                                                 <label for="file">Masukkan Scan Bukti Pembayaran :</label>
-                                                <input type="file" name="dokumen1" class="form-control" required>
+                                                <input type="file" name="dokumen0" class="form-control" required>
                                             </div>
                                             <div class="alert alert-danger" role="alert" id="#alert2" style="display:none; width:100%;">
                                                 <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
