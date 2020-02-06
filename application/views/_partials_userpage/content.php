@@ -9,14 +9,20 @@
          </button>
          <div class="collapse navbar-collapse flex-sm-row-reverse" id="headernav">
              <ul id="grupmenu" class="nav navbar-nav menu">
-
+                 <li class="nav-item">
+                     <a class="nav-link" href="<?php echo site_url() ?>/home">Home</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link menu-app" data-val="Userpage/aktivitas">Aktivitas</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link menu-app" data-val="Userpage/modul">Modul</a>
+                 </li>
                  <li class="nav-item dropdown">
                      <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                          <div class="media align-items-center">
-                             <span class="avatar">
-                                 <img alt="Image placeholder" src="<?php echo base_url() ?>assets/images/oia-logo.jpeg">
-                             </span>
-                             <div class="media-body ml-2 d-none d-lg-block">
+
+                             <div class="media-body d-lg-block">
                                  <span class="mb-0 text-sm  font-weight-bold">
                                      <?php
                                         $str = $this->session->userdata('nama');
@@ -25,12 +31,13 @@
                                         ?>
 
                                  </span>
+                                 <span class="fa fa-sort-down" style="color:white; margin-left:1px;"></span>
                              </div>
                          </div>
                      </a>
                      <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
-                         <a class="dropdown-item menu-app" data-val="Userpage/beranda">Beranda</a>
-                         <a class="dropdown-item menu-app" data-val="Userpage/daftarworkshop">Daftar Workshop</a>
+
+                         <a class="dropdown-item menu-app menudaftar" data-val="Userpage/daftarworkshop">Daftar Workshop</a>
                          <a class="dropdown-item logout" data-val="Account/logout">
                              <i class="ni ni-user-run"></i>
                              <span>Logout</span>

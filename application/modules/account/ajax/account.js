@@ -22,6 +22,7 @@ $(document).ready(function () {
                 }
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
+                $('.loader').hide();
                 console.log("Status: " + textStatus, "error");
                 console.log("Error: " + errorThrown, "error");
                 swal("Gagal", "Register gagal ! Silahkan coba lagi !", "error");
@@ -51,6 +52,7 @@ $(document).ready(function () {
                 }
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
+                $('.loader').hide();
                 console.log("Status: " + textStatus, "error");
                 console.log("Error: " + errorThrown, "error");
                 swal("Gagal", "Login gagal ! Silahkan coba lagi !", "error");

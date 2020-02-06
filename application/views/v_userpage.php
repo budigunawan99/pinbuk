@@ -2,17 +2,21 @@
 <html lang="en">
 
 <head>
-    <?php
-    $this->load->view("_partials_home/header");
-    ?>
     <style>
-        .avatar img {
+        /* .avatar img {
             float: left;
             max-width: 1.5rem;
             margin-right: 3px;
             border-radius: 50%;
+        } */
+        .formdaftar{
+            background-color: white;
         }
     </style>
+    <?php
+    $this->load->view("_partials_home/header");
+    ?>
+
 </head>
 
 <body id="myPage">
@@ -52,8 +56,9 @@
                 event.preventDefault();
                 $('.loader').show();
                 nav = $(this).data("val");
-                // console.log("update", BASE_URL + nav);
-
+                nama = $(this).data("nama");
+                email = $(this).data("email");
+                // console.log("update", BASE_URL + nav);                
                 $.ajax({
                     type: "POST",
                     url: BASE_URL + nav,
@@ -64,6 +69,7 @@
                         $("#container-content").html(data);
                     },
                     error: function(data) {
+                        $('.loader').hide();
                         console.log("error", data);
 
                     }
@@ -115,6 +121,11 @@
                 })
             });
         });
+    </script>
+    <script type="text/javascript">
+        <?php
+        include(APPPATH . "/modules/userpage/ajax/userpage.js");
+        ?>
     </script>
 
 </body>

@@ -142,6 +142,51 @@
                 });
             } // End if
         });
+
+        $('.logout').click(function(event) {
+                event.preventDefault();
+                nav = $(this).data("val");
+                // console.log("update", BASE_URL + nav);
+
+                swal({
+                    title: "Apakah anda yakin ?",
+                    text: "Anda akan meninggalkan laman ini !",
+                    icon: "warning",
+                    buttons: {
+                        cancel: true,
+                        confirm: true,
+                    }
+                }).then(function(isConfirm) {
+                    if (isConfirm) {
+                        $.ajax({
+                            type: "POST",
+                            url: BASE_URL + nav,
+                            cache: false,
+                            success: function(data) {
+                                var str = data.replace(/\"/g, "");
+                                swal(str, {
+                                    title: "Berhasil",
+                                    buttons: false,
+                                    timer: 1000,
+                                    icon: "success",
+                                });
+                                window.location.href = BASE_URL + "home";
+                                // console.log("success", data);
+                            },
+                            error: function(data) {
+                                console.log("error", data);
+                            }
+                        });
+                    } else {
+                        swal("Logout dibatalkan", {
+                            title: "Cancelled",
+                            buttons: false,
+                            timer: 1000,
+                            icon: "error",
+                        });
+                    }
+                })
+            });
     })
    
 </script>

@@ -90,6 +90,7 @@
                         $("#container-content").html(data);
                     },
                     error: function(data) {
+                        $('.loader').hide();
                         console.log("error", data);
 
                     }

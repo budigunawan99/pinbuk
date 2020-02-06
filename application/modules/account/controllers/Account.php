@@ -95,7 +95,7 @@ class Account extends CI_Controller
 							<h2>Thank you for Registering.</h2>
 							<p>" . $nama . "</p>
 							<p>Please click the link below to activate your account .</p>
-							<h4><a href='" . site_url() . "account/activate/" . $id . "/" . $code . "'>Activate My Account</a></h4>
+							<h4><a href='" . site_url() . "/account/activate/" . $id . "/" . $code . "'>Activate My Account</a></h4>
 						</body>
 						</html>
                         ";
