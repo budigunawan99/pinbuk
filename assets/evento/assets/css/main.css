@@ -2006,7 +2006,6 @@ Cover
 }
 .cover_slider .cover_item .slider_content {
   display: table;
-  background-color: rgba(0, 0, 0, 0.2);
   height: 100%;
   width: 100%;
   position: relative;
@@ -2415,32 +2414,25 @@ Cover
   position: relative;
   overflow: hidden;
 }
+
 .speaker_box .speaker_img {
   position: relative;
   overflow: hidden;
 }
 .speaker_box .speaker_img img {
   width: 100%;
-  -webkit-transition: all ease-in-out 0.4s;
-  transition: all ease-in-out 0.4s;
+  -webkit-transition: all ease-in-out 0.0s;
+  transition: all ease-in-out 0.0s;
 }
 .speaker_box .speaker_img .info_box {
   position: absolute;
-  bottom: 25px;
+  bottom: 100px;
   background-color: #6EBE90;
   padding: 10px 30px;
-  -webkit-transition: all ease-in-out 0.4s;
-  transition: all ease-in-out 0.4s;
+  -webkit-transition: all ease-in-out 0.0s;
+  transition: all ease-in-out 0.0s;
 }
-.speaker_box .speaker_img .info_box .name {
-  color: #28624E;
-  font-size: 16px;
-  margin-bottom: 0;
-  font-weight: 600;
-  text-transform: capitalize;
-  -webkit-transition: all ease-in-out 0.4s;
-  transition: all ease-in-out 0.4s;
-}
+
 .speaker_box .speaker_img .info_box .position {
   font-size: 12px;
   color: #F9C37F;
@@ -2475,20 +2467,18 @@ Cover
 }
 .speaker_box:hover .speaker_img img {
   width: 100%;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: all ease-in-out 0.4s;
-  transition: all ease-in-out 0.4s;
+  -webkit-transition: all ease-in-out 0.0s;
+  transition: all ease-in-out 0.0s;
 }
 .speaker_box:hover .speaker_img .info_box {
   background-color: #F28256;
-  -webkit-transition: all ease-in-out 0.4s;
-  transition: all ease-in-out 0.4s;
+  -webkit-transition: all ease-in-out 0.0s;
+  transition: all ease-in-out 0.0s;
 }
 .speaker_box:hover .speaker_img .info_box .name {
   color: #ffffff;
-  -webkit-transition: all ease-in-out 0.4s;
-  transition: all ease-in-out 0.4s;
+  -webkit-transition: all ease-in-out 0.0s;
+  transition: all ease-in-out 0.0s;
 }
 .speaker_box:hover .speaker_img .info_box .position {
   color: #ffffff;

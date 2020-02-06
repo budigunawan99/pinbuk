@@ -69,7 +69,7 @@
                                 </h2>
                                 <strong class="cover-xl-text">Nasional</strong>
                                 <p class="cover-date">
-                                    INKLUSI KEUANGAN  MELALUI PENGEMBANGAN BMT BERBASIS RUMAH IBADAH DAN KELURAHAN  UNTUK PENGENTASAN KEMISKINAN
+                                  “Pemberdayaan dan Pengembangan Sosial Ekonomi Masyarakat di Era 4.0”
                                 </p>
                                 <p class="cover-date">
                                   (Tanggal Acara)
@@ -192,184 +192,15 @@
             </div>
         </div>
         <div class="row justify-content-center no-gutters">
-            <div class="col-md-3 col-sm-6">
+            <div class="cover_item">
                 <div class="speaker_box">
                     <div class="speaker_img">
-                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s1.png" alt="speaker name">
-                        <div class="info_box">
-                            <h5 class="name">Aslichan Burhan</h5>
-                            <p class="position">CEO Company</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="speaker_box">
-                    <div class="speaker_img">
-                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s2.png" alt="speaker name">
-                        <div class="info_box">
-                            <h5 class="name">Ridho Nugraha</h5>
-                            <p class="position">CEO Company</p>
-                        </div>
-                    </div>
-                </div>
+                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/speaker1.png" alt="speaker name">
 
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="speaker_box">
-                    <div class="speaker_img">
-                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s3.png" alt="speaker name">
-                        <div class="info_box">
-                            <h5 class="name">Deny Irawan</h5>
-                            <p class="position">CEO Company</p>
-                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="speaker_box">
-                    <div class="speaker_img">
-                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s4.png" alt="speaker name">
-                        <div class="info_box">
-                            <h5 class="name">Syamsul Hadi</h5>
-                            <p class="position">CEO Company</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="speaker_box">
-                    <div class="speaker_img">
-                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s5.png" alt="speaker name">
-                        <div class="info_box">
-                            <h5 class="name">Boy Konga Kairosa</h5>
-                            <p class="position">CEO Company</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="speaker_box">
-                    <div class="speaker_img">
-                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s6.png" alt="speaker name">
-                        <div class="info_box">
-                            <h5 class="name">Rahmatul Firdaus</h5>
-                            <p class="position">CEO Company</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="speaker_box">
-                    <div class="speaker_img">
-                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s7.png" alt="speaker name">
-                        <div class="info_box">
-                            <h5 class="name">Agustyanto</h5>
-                            <p class="position">CEO Company</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="speaker_box">
-                    <div class="speaker_img">
-                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s8.png" alt="speaker name">
-                        <div class="info_box">
-                            <h5 class="name">Budi Purnomo</h5>
-                            <p class="position">CEO Company</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="speaker_box">
-                    <div class="speaker_img">
-                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s8.png" alt="speaker name">
-                        <div class="info_box">
-                            <h5 class="name">Budi Herdiansyah</h5>
-                            <p class="position">CEO Company</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="speaker_box">
-                    <div class="speaker_img">
-                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s8.png" alt="speaker name">
-                        <div class="info_box">
-                            <h5 class="name">Dr. Ahmad Subagyo</h5>
-                            <p class="position">CEO Company</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="speaker_box">
-                    <div class="speaker_img">
-                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s8.png" alt="speaker name">
-                        <div class="info_box">
-                            <h5 class="name">Ir. Riza Rahman, M.Sc </h5>
-                            <p class="position">Dosen UMN</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="speaker_box">
-                    <div class="speaker_img">
-                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s8.png" alt="speaker name">
-                        <div class="info_box">
-                            <h5 class="name">Hidayatullah</h5>
-                            <p class="position">CEO Company</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="speaker_box">
-                    <div class="speaker_img">
-                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s8.png" alt="speaker name">
-                        <div class="info_box">
-                            <h5 class="name">Hidayaturrahman</h5>
-                            <p class="position">CEO Company</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="speaker_box">
-                    <div class="speaker_img">
-                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s8.png" alt="speaker name">
-                        <div class="info_box">
-                            <h5 class="name">Bambang Widuri</h5>
-                            <p class="position">CEO Company</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="speaker_box">
-                    <div class="speaker_img">
-                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s8.png" alt="speaker name">
-                        <div class="info_box">
-                            <h5 class="name">Chrisna Wibowo</h5>
-                            <p class="position">CEO Company</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="speaker_box">
-                    <div class="speaker_img">
-                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s8.png" alt="speaker name">
-                        <div class="info_box">
-                            <h5 class="name">Agus Kholiq</h5>
-                            <p class="position">BUMDES Desa Wisata, Sleman</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+          </div>
     </section>
     <!--speaker section end -->
 
