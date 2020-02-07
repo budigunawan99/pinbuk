@@ -191,16 +191,18 @@
                 </h3>
             </div>
         </div>
-        <div class="row justify-content-center no-gutters">
             <div class="cover_item">
                 <div class="speaker_box">
                     <div class="speaker_img">
                         <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/speaker1.png" alt="speaker name">
-
+                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/speaker2.png" alt="speaker name">
+                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/speaker3.png" alt="speaker name">
+                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/workshop1.png" alt="speaker name">
+                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/workshop2.png" alt="speaker name">
+                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/workshop3.png" alt="speaker name">
                     </div>
                 </div>
-            </div>
-          </div>
+
     </section>
     <!--speaker section end -->
 
