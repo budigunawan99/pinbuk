@@ -13,13 +13,13 @@
                     <a class="nav-link active" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#s1">About</a>
+                    <a class="nav-link " href="#s2">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#s2">Jadwal</a>
+                    <a class="nav-link " href="#s3">Jadwal</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#s3">Modul</a>
+                    <a class="nav-link " href="#s4">Panduan Acara</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " href="#s4">Contact</a>
