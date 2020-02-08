@@ -1,3 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <?php
+    $this->load->view("_partials_home/header");
+    ?>
+</head>
+
+<body id="myPage">
+    <?php
+    $this->load->view("_partials_home/loader");
+    $this->load->view("_partials_home/menuAfterLogin");
+    ?>
+
     <!--cover section slider -->
     <section id="home" class="home-cover">
         <div class="cover_slider owl-carousel owl-theme">
@@ -54,7 +69,7 @@
                                 </h2>
                                 <strong class="cover-xl-text">Nasional</strong>
                                 <p class="cover-date">
-                                  “Pemberdayaan dan Pengembangan Sosial Ekonomi Masyarakat di Era 4.0”
+                                    INKLUSI KEUANGAN  MELALUI PENGEMBANGAN BMT BERBASIS RUMAH IBADAH DAN KELURAHAN  UNTUK PENGENTASAN KEMISKINAN
                                 </p>
                                 <p class="cover-date">
                                   (Tanggal Acara)
@@ -106,7 +121,7 @@
                 </div>
                 <div class="col-12 col-md-6">
                     <p>
-                        PINBUK didirikan oleh Ketua Umum ICMI, Prof. DR Ing.- B.J. Habibie,  Ketua Umum Majelis Ulama Indonesia (MUI), alm. K.H. Hasan Basri, dan Direktur Utama Bank Muamalat Indonesia Zainulbahar Noor, SE., memiliki perwakilan-perwakilan di seluruh provinsi dan telah mendirikan lebih dari 3900 BMT di seluruh Indonesia.  PINBUK telah menginisiasi mendirikan Inkopsyah BMT dan ABSINDO (Asosiasi BMT Se- Indonesia).
+                        In rhoncus massa nec sollicitudin. Ut hendrerit hendrerit nisl a accumsan. Pellentesque convallis consectetur tortor id placerat. Curabitur a pulvinar nunc. Maecenas laoreet finibus lectus, at volutpat ligula euismod quis. Maecenas ornare, ex in malesuada tempus.
                     </p>
                 </div>
             </div>
@@ -121,6 +136,7 @@
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec graviante.
                             </p>
+                            <a href="#">read more</a>
                         </div>
                     </div>
                 </div>
@@ -129,10 +145,11 @@
                     <div class="icon_box_one">
                         <i class="lnr lnr-rocket"></i>
                         <div class="content">
-                            <h4>Best Practices</h4>
+                            <h4>8 hrs Marathon</h4>
                             <p>
-                              	Mendapatkan pengalaman dalam pengentasan kemiskinan dan pemberdayaan masyarakat melalui BMT berbasis rumah ibadah dan kelurahan/desa, mendukung program inklusi keuangan.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec graviante.
                             </p>
+                            <a href="#">read more</a>
                         </div>
                     </div>
                 </div>
@@ -141,10 +158,11 @@
                     <div class="icon_box_one">
                         <i class="lnr lnr-bullhorn"></i>
                         <div class="content">
-                            <h4>Transaksi Syariah</h4>
+                            <h4>Live Broadcast</h4>
                             <p>
-                              Mendapatkan pemahaman mengenai berbagai transaksi berbasis syariah seperti ZIS, wakaf tunai, mudhorobah, sebagai pendekatan pemberdayaan masyarakat.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec graviante.
                             </p>
+                            <a href="#">read more</a>
                         </div>
                     </div>
                 </div>
@@ -153,10 +171,11 @@
                     <div class="icon_box_one">
                         <i class="lnr lnr-clock"></i>
                         <div class="content">
-                            <h4>Perancangan dan Penganggaran</h4>
+                            <h4>Early Bird</h4>
                             <p>
-                              Berbagi pengalaman dalam hal menginisiasi,menyusun perencanaan,penganggaran program dan memetakan berbagai sumber daya pendukung program
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec graviante.
                             </p>
+                            <a href="#">read more</a>
                         </div>
                     </div>
                 </div>
@@ -177,15 +196,96 @@
             </div>
         </div>
         <div class="row justify-content-center no-gutters">
-            <div class="cover_item">
+            <div class="col-md-3 col-sm-6">
                 <div class="speaker_box">
                     <div class="speaker_img">
-                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/speaker1.png" alt="speaker name">
-
+                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s1.png" alt="speaker name">
+                        <div class="info_box">
+                            <h5 class="name">Patricia Stone</h5>
+                            <p class="position">CEO Company</p>
+                        </div>
                     </div>
                 </div>
             </div>
-          </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="speaker_box">
+                    <div class="speaker_img">
+                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s2.png" alt="speaker name">
+                        <div class="info_box">
+                            <h5 class="name">James Oliver</h5>
+                            <p class="position">CEO Company</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="speaker_box">
+                    <div class="speaker_img">
+                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s3.png" alt="speaker name">
+                        <div class="info_box">
+                            <h5 class="name">Carla Banks</h5>
+                            <p class="position">CEO Company</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="speaker_box">
+                    <div class="speaker_img">
+                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s4.png" alt="speaker name">
+                        <div class="info_box">
+                            <h5 class="name">William Smith</h5>
+                            <p class="position">CEO Company</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="speaker_box">
+                    <div class="speaker_img">
+                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s5.png" alt="speaker name">
+                        <div class="info_box">
+                            <h5 class="name">Jessica Black</h5>
+                            <p class="position">CEO Company</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="speaker_box">
+                    <div class="speaker_img">
+                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s6.png" alt="speaker name">
+                        <div class="info_box">
+                            <h5 class="name">Patricia Stone</h5>
+                            <p class="position">CEO Company</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="speaker_box">
+                    <div class="speaker_img">
+                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s7.png" alt="speaker name">
+                        <div class="info_box">
+                            <h5 class="name">Duncan Stan</h5>
+                            <p class="position">CEO Company</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="speaker_box">
+                    <div class="speaker_img">
+                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s8.png" alt="speaker name">
+                        <div class="info_box">
+                            <h5 class="name">Patricia Stone</h5>
+                            <p class="position">CEO Company</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <!--speaker section end -->
 
@@ -360,3 +460,9 @@
     </section>
     <!--get tickets section end-->
 
+    <?php
+    $this->load->view("_partials_home/footer");
+    ?>
+</body>
+
+</html>
