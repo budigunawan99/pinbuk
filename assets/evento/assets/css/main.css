@@ -2418,6 +2418,14 @@ Cover
 .speaker_box .speaker_img {
   position: relative;
   overflow: hidden;
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  padding: 150px 0;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
 }
 .speaker_box .speaker_img img {
   width: 100%;
