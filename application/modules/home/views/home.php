@@ -10,17 +10,10 @@
                                     Seminar dan Workshop
                                 </h2>
                                 <strong class="cover-xl-text">NASIONAL</strong>
-<<<<<<< HEAD
                                 <p class="cover-date">
                                   Tema: "Pemberdayaan Sosial Ekonomi"
                                 </p>
                                 <p class="cover-date">
-=======
-                                <p class="cover-date">
-                                  Tema: "Pemberdayaan Sosial Ekonomi"
-                                </p>
-                                <p class="cover-date">
->>>>>>> master
                                 (Tanggal Acara)
                                 </p>
                                 <a href="#" class=" btn btn-primary btn-rounded">
@@ -61,20 +54,10 @@
                                 </h2>
                                 <strong class="cover-xl-text">Nasional</strong>
                                 <p class="cover-date">
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                    12-20 February 2018 - Los Angeles, CA.
-=======
-=======
->>>>>>> master
                                   “Pemberdayaan dan Pengembangan Sosial Ekonomi Masyarakat di Era 4.0”
                                 </p>
                                 <p class="cover-date">
                                   (Tanggal Acara)
-<<<<<<< HEAD
->>>>>>> master
-=======
->>>>>>> master
                                 </p>
                             </div>
                         </div>
@@ -92,65 +75,6 @@
     </section>
     <!--cover section slider end -->
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <!--event info -->
-    <section id="s1" class="pt100 pb100">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-6 col-md-3  ">
-                    <div class="icon_box_two">
-                        <i class="ion-ios-calendar-outline"></i>
-                        <div class="content">
-                            <h5 class="box_title">
-                                DATE
-                            </h5>
-                            <p>
-                                12-20 february 2018
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-3  ">
-                    <div class="icon_box_two">
-                        <i class="ion-ios-location-outline"></i>
-                        <div class="content">
-                            <h5 class="box_title">
-                                location
-                            </h5>
-                            <p>
-                                Los Angeles, CA.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-3  ">
-                    <div class="icon_box_two">
-                        <i class="ion-ios-person-outline"></i>
-                        <div class="content">
-                            <h5 class="box_title">
-                                speakers
-                            </h5>
-                            <p>
-                                Natalie James
-                                + guests
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!--event info end -->
-
-
-=======
->>>>>>> master
-=======
->>>>>>> master
     <!--event countdown -->
     <section class="bg-img pt70 pb70" style="background-image: url('<?php echo base_url() ?>assets/evento/assets/img/bg/bgnew.png');">
         <div class="overlay_dark"></div>
