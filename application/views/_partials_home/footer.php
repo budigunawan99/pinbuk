@@ -25,9 +25,6 @@
                                 <a href="#"><i class="ion-social-twitter"></i></a>
                             </li>
                             <li>
-                                <a href="#"><i class="ion-social-dribbble"></i></a>
-                            </li>
-                            <li>
                                 <a href="#"><i class="ion-social-instagram"></i></a>
                             </li>
                         </ul>
@@ -83,7 +80,7 @@
                 <div class="footer_box">
                     <div class="footer_header">
                         <h4 class="footer_title">
-                            subscribe to our newsletter
+                            Lokasi Event
                         </h4>
                     </div>
                     <div class="footer_box_body">
@@ -97,21 +94,6 @@
         </div>
     </div>
 </footer>
-<div class="copyright_footer">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-6 col-12">
-                <p>
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    Copyright &copy;<script>
-                        document.write(new Date().getFullYear());
-                    </script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
 <!--footer end -->
 
 <!-- jquery -->
@@ -132,8 +114,10 @@
 <script src="<?php echo base_url() ?>assets/evento/assets/js/wow.min.js"></script>
 <!-- Custom js -->
 <script src="<?php echo base_url() ?>assets/evento/assets/js/main.js"></script>
+<script type="text/javascript" src="<?php echo base_url() ?>assets/sweetalert/sweetalert-master/dist/sweetalert.min.js"></script>
 
 <script>
+    var BASE_URL = '<?php echo base_url(); ?>index.php/';
     /* ---------------------------- SMOOTH SCROLLING ----------------------------------- */
     $(document).ready(function() {
         // Add smooth scrolling to all links in navbar + footer link
@@ -155,6 +139,51 @@
                 });
             } // End if
         });
+
+        $('.logout').click(function(event) {
+                event.preventDefault();
+                nav = $(this).data("val");
+                // console.log("update", BASE_URL + nav);
+
+                swal({
+                    title: "Apakah anda yakin ?",
+                    text: "Anda akan meninggalkan laman ini !",
+                    icon: "warning",
+                    buttons: {
+                        cancel: true,
+                        confirm: true,
+                    }
+                }).then(function(isConfirm) {
+                    if (isConfirm) {
+                        $.ajax({
+                            type: "POST",
+                            url: BASE_URL + nav,
+                            cache: false,
+                            success: function(data) {
+                                var str = data.replace(/\"/g, "");
+                                swal(str, {
+                                    title: "Berhasil",
+                                    buttons: false,
+                                    timer: 1000,
+                                    icon: "success",
+                                });
+                                window.location.href = BASE_URL + "home";
+                                // console.log("success", data);
+                            },
+                            error: function(data) {
+                                console.log("error", data);
+                            }
+                        });
+                    } else {
+                        swal("Logout dibatalkan", {
+                            title: "Cancelled",
+                            buttons: false,
+                            timer: 1000,
+                            icon: "error",
+                        });
+                    }
+                })
+            });
     })
-   
+
 </script>

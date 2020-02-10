@@ -79,7 +79,7 @@ p {
   margin: 0 0 15px;
   line-height: 24px;
   font-weight: 400;
-  color: #838383;
+  color: #367160;
 }
 p:last-child {
   margin-bottom: 0;
@@ -137,7 +137,7 @@ ul.nosyely_list {
   display: inline-block;
   padding: 25px;
   min-width: 120px;
-  background-color: #F44336;
+  background-color: #F28256;
   color: #ffffff;
   font-size: 48px;
   font-weight: 600;
@@ -324,7 +324,7 @@ img {
   top: 0;
   bottom: 0;
   width: 100%;
-  background-color: #f7f7f7;
+  background-color: rgba(255, 255, 255, .4);
   z-index: 999999;
 }
 .loader .loader-inner {
@@ -1660,7 +1660,7 @@ header ul.menu li a.nav-link {
   color: #ffffff;
 }
 header ul.menu li a.nav-link:hover {
-  color: #6EBE90;
+  color: #F9C37F;
 }
 header ul.menu .search_btn {
   padding: 16px 8px !important;
@@ -1704,7 +1704,7 @@ header li ul.sub_menu li a:hover {
 }
 
 header.sticky_header {
-  background-color: #18181c;
+  background-color: #F28256;
   margin: 0;
   padding: 5px;
   -webkit-box-shadow: 0 0 42px rgba(0, 0, 0, 0.08);
@@ -1733,7 +1733,7 @@ header.sticky_header {
 }
 @media (max-width: 767px) {
   header {
-    background-color: #18181c;
+    background-color: #F28256;
     margin: 0;
     -webkit-box-shadow: 0 0 42px rgba(0, 0, 0, 0.08);
     box-shadow: 0 0 42px rgba(0, 0, 0, 0.08);
@@ -1814,8 +1814,8 @@ footer ul.instagram_list li {
   float: left;
 }
 footer .newsletter_form .form-control {
-  background-color: #F9C37F;
-  border: solid 1px #6EBE90;
+  background-color: #1f1039;
+  border: solid 1px #1f1039;
   font-weight: 500;
   color: #ffffff;
 }
@@ -1823,14 +1823,13 @@ footer .newsletter_form .form-control {
 .copyright_footer {
   display: none;
   background-color: #6EBE90;
-  background-image: image("copyright.png");
   padding: 15px;
 }
 .copyright_footer p {
   font-size: 13px;
   padding: 10px;
   text-transform: capitalize;
-  color: #6EBE90;
+  color: #ffffff;
 }
 .copyright_footer ul.footer_menu {
   padding: 0;
@@ -1844,10 +1843,10 @@ footer .newsletter_form .form-control {
 .copyright_footer ul.footer_menu li a {
   padding: 10px;
   text-transform: capitalize;
-  color: #6EBE90;
+  color: #838383;
 }
 .copyright_footer ul.footer_menu li a:hover {
-  color: #6EBE90;
+  color: #ffffff;
 }
 
 @media (max-width: 767px) {
@@ -1912,16 +1911,16 @@ footer .newsletter_form .form-control {
 }
 
 .btn-primary {
-  background-color: #f50136;
-  border: solid 1px #f50136;
+  background-color: #F28256;
+  border: solid 1px #F28256;
   color: #ffffff;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 .btn-primary:hover {
-  background-color: #18181c;
+  background-color: #F9C37F;
   color: #ffffff;
-  border: solid 1px #18181c;
+  border: solid 1px #F9C37F;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
@@ -2007,7 +2006,6 @@ Cover
 }
 .cover_slider .cover_item .slider_content {
   display: table;
-  background-color: rgba(0, 0, 0, 0.2);
   height: 100%;
   width: 100%;
   position: relative;
@@ -2037,7 +2035,7 @@ Cover
   font-size: 90px;
   font-weight: 900;
   line-height: 1.1;
-  color: #f50136;
+  color: #F9C37F;
   -webkit-transform: translateY(20px);
   transform: translateY(20px);
   -webkit-transition: all 0.4s 600ms ease-in-out;
@@ -2416,35 +2414,28 @@ Cover
   position: relative;
   overflow: hidden;
 }
+
 .speaker_box .speaker_img {
   position: relative;
   overflow: hidden;
 }
 .speaker_box .speaker_img img {
   width: 100%;
-  -webkit-transition: all ease-in-out 0.4s;
-  transition: all ease-in-out 0.4s;
+  -webkit-transition: all ease-in-out 0.0s;
+  transition: all ease-in-out 0.0s;
 }
 .speaker_box .speaker_img .info_box {
   position: absolute;
-  bottom: 25px;
-  background-color: #18181c;
+  bottom: 100px;
+  background-color: #6EBE90;
   padding: 10px 30px;
-  -webkit-transition: all ease-in-out 0.4s;
-  transition: all ease-in-out 0.4s;
+  -webkit-transition: all ease-in-out 0.0s;
+  transition: all ease-in-out 0.0s;
 }
-.speaker_box .speaker_img .info_box .name {
-  color: #f50136;
-  font-size: 16px;
-  margin-bottom: 0;
-  font-weight: 600;
-  text-transform: capitalize;
-  -webkit-transition: all ease-in-out 0.4s;
-  transition: all ease-in-out 0.4s;
-}
+
 .speaker_box .speaker_img .info_box .position {
   font-size: 12px;
-  color: #ffffff;
+  color: #F9C37F;
   text-transform: capitalize;
 }
 .speaker_box .speaker_social {
@@ -2460,36 +2451,34 @@ Cover
   margin-left: 4px;
 }
 .speaker_box .speaker_social ul li a {
-  border: solid 1px #f50136;
+  border: solid 1px #F28256;
   display: block;
   border-radius: 50px;
   padding: 7px 0;
   font-size: 24px;
-  color: #f50136;
+  color: #F28256;
   width: 40px;
   height: 40px;
   text-align: center;
 }
 .speaker_box .speaker_social ul li a:hover {
   color: #ffffff;
-  background-color: #f50136;
+  background-color: #F28256;
 }
 .speaker_box:hover .speaker_img img {
   width: 100%;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: all ease-in-out 0.4s;
-  transition: all ease-in-out 0.4s;
+  -webkit-transition: all ease-in-out 0.0s;
+  transition: all ease-in-out 0.0s;
 }
 .speaker_box:hover .speaker_img .info_box {
-  background-color: #f50136;
-  -webkit-transition: all ease-in-out 0.4s;
-  transition: all ease-in-out 0.4s;
+  background-color: #F28256;
+  -webkit-transition: all ease-in-out 0.0s;
+  transition: all ease-in-out 0.0s;
 }
 .speaker_box:hover .speaker_img .info_box .name {
   color: #ffffff;
-  -webkit-transition: all ease-in-out 0.4s;
-  transition: all ease-in-out 0.4s;
+  -webkit-transition: all ease-in-out 0.0s;
+  transition: all ease-in-out 0.0s;
 }
 .speaker_box:hover .speaker_img .info_box .position {
   color: #ffffff;
@@ -2662,7 +2651,7 @@ Cover
   min-width: 1000px;
 }
 .table.event_calender thead.event_title {
-  background-color: #f50136;
+  background-color: #6EBE90;
   color: #ffffff;
   border: 0;
 }
@@ -3080,7 +3069,8 @@ Cover
   padding: 12px 15px;
   height: 50px;
   border-radius: 1px;
-  background-color: #e2e6f1;
+  color:black;
+  background-color: white;
   border: solid 1px #e2e6f1;
   margin-bottom: 25px;
   outline: 0 !important;

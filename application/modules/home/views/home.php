@@ -1,18 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <?php
-    $this->load->view("_partials_home/header");
-    ?>
-</head>
-
-<body id="myPage">
-    <?php
-    $this->load->view("_partials_home/loader");
-    $this->load->view("_partials_home/menu");
-    ?>
-
     <!--cover section slider -->
     <section id="home" class="home-cover">
         <div class="cover_slider owl-carousel owl-theme">
@@ -22,34 +7,24 @@
                         <div class="container">
                             <div class="slider-content-center">
                                 <h2 class="cover-title">
-                                    Prepare yourself for the
+                                    Seminar dan Workshop
                                 </h2>
-                                <strong class="cover-xl-text">conference</strong>
+                                <strong class="cover-xl-text">NASIONAL</strong>
+<<<<<<< HEAD
                                 <p class="cover-date">
-                                    12-14 February 2018 - Los Angeles, CA.
+                                  Tema: "Pemberdayaan Sosial Ekonomi"
+                                </p>
+                                <p class="cover-date">
+=======
+                                <p class="cover-date">
+                                  Tema: "Pemberdayaan Sosial Ekonomi"
+                                </p>
+                                <p class="cover-date">
+>>>>>>> master
+                                (Tanggal Acara)
                                 </p>
                                 <a href="#" class=" btn btn-primary btn-rounded">
-                                    Buy Tickets Now
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cover_item" style="background: url('<?php echo base_url() ?>assets/evento/assets/img/bg/bgnew.png');">
-                <div class="slider_content">
-                    <div class="slider-content-inner">
-                        <div class="container">
-                            <div class="slider-content-left">
-                                <h2 class="cover-title">
-                                    Prepare yourself for the
-                                </h2>
-                                <strong class="cover-xl-text">conference</strong>
-                                <p class="cover-date">
-                                    12-14 February 2018 - Los Angeles, CA.
-                                </p>
-                                <a href="#" class=" btn btn-primary btn-rounded">
-                                    Buy Tickets Now
+                                    Registrasi
                                 </a>
                             </div>
                         </div>
@@ -62,15 +37,45 @@
                         <div class="container">
                             <div class="slider-content-center">
                                 <h2 class="cover-title">
-                                    Prepare yourself for the
+                                    Seminar
                                 </h2>
-                                <strong class="cover-xl-text">conference</strong>
+                                <strong class="cover-xl-text">Nasional</strong>
                                 <p class="cover-date">
-                                    12-20 February 2018 - Los Angeles, CA.
+                                    INKLUSI KEUANGAN  MELALUI PENGEMBANGAN BMT BERBASIS RUMAH IBADAH DAN KELURAHAN  UNTUK PENGENTASAN KEMISKINAN
                                 </p>
-                                <a href="#" class=" btn btn-primary btn-rounded">
-                                    Buy Tickets Now
-                                </a>
+                                <p class="cover-date">
+                                  (Tanggal Acara)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cover_item" style="background: url('<?php echo base_url() ?>assets/evento/assets/img/bg/bgnew.png');">
+                <div class="slider_content">
+                    <div class="slider-content-inner">
+                        <div class="container">
+                            <div class="slider-content-center">
+                                <h2 class="cover-title">
+                                    Workshop
+                                </h2>
+                                <strong class="cover-xl-text">Nasional</strong>
+                                <p class="cover-date">
+<<<<<<< HEAD
+<<<<<<< HEAD
+                                    12-20 February 2018 - Los Angeles, CA.
+=======
+=======
+>>>>>>> master
+                                  “Pemberdayaan dan Pengembangan Sosial Ekonomi Masyarakat di Era 4.0”
+                                </p>
+                                <p class="cover-date">
+                                  (Tanggal Acara)
+<<<<<<< HEAD
+>>>>>>> master
+=======
+>>>>>>> master
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -87,6 +92,8 @@
     </section>
     <!--cover section slider end -->
 
+<<<<<<< HEAD
+<<<<<<< HEAD
     <!--event info -->
     <section id="s1" class="pt100 pb100">
         <div class="container">
@@ -140,6 +147,10 @@
     <!--event info end -->
 
 
+=======
+>>>>>>> master
+=======
+>>>>>>> master
     <!--event countdown -->
     <section class="bg-img pt70 pb70" style="background-image: url('<?php echo base_url() ?>assets/evento/assets/img/bg/bgnew.png');">
         <div class="overlay_dark"></div>
@@ -171,7 +182,7 @@
                 </div>
                 <div class="col-12 col-md-6">
                     <p>
-                        In rhoncus massa nec sollicitudin. Ut hendrerit hendrerit nisl a accumsan. Pellentesque convallis consectetur tortor id placerat. Curabitur a pulvinar nunc. Maecenas laoreet finibus lectus, at volutpat ligula euismod quis. Maecenas ornare, ex in malesuada tempus.
+                        PINBUK didirikan oleh Ketua Umum ICMI, Prof. DR Ing.- B.J. Habibie,  Ketua Umum Majelis Ulama Indonesia (MUI), alm. K.H. Hasan Basri, dan Direktur Utama Bank Muamalat Indonesia Zainulbahar Noor, SE., memiliki perwakilan-perwakilan di seluruh provinsi dan telah mendirikan lebih dari 3900 BMT di seluruh Indonesia.  PINBUK telah menginisiasi mendirikan Inkopsyah BMT dan ABSINDO (Asosiasi BMT Se- Indonesia).
                     </p>
                 </div>
             </div>
@@ -186,7 +197,6 @@
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec graviante.
                             </p>
-                            <a href="#">read more</a>
                         </div>
                     </div>
                 </div>
@@ -195,11 +205,10 @@
                     <div class="icon_box_one">
                         <i class="lnr lnr-rocket"></i>
                         <div class="content">
-                            <h4>8 hrs Marathon</h4>
+                            <h4>Best Practices</h4>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec graviante.
+                              	Mendapatkan pengalaman dalam pengentasan kemiskinan dan pemberdayaan masyarakat melalui BMT berbasis rumah ibadah dan kelurahan/desa, mendukung program inklusi keuangan.
                             </p>
-                            <a href="#">read more</a>
                         </div>
                     </div>
                 </div>
@@ -208,11 +217,10 @@
                     <div class="icon_box_one">
                         <i class="lnr lnr-bullhorn"></i>
                         <div class="content">
-                            <h4>Live Broadcast</h4>
+                            <h4>Transaksi Syariah</h4>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec graviante.
+                              Mendapatkan pemahaman mengenai berbagai transaksi berbasis syariah seperti ZIS, wakaf tunai, mudhorobah, sebagai pendekatan pemberdayaan masyarakat.
                             </p>
-                            <a href="#">read more</a>
                         </div>
                     </div>
                 </div>
@@ -221,11 +229,10 @@
                     <div class="icon_box_one">
                         <i class="lnr lnr-clock"></i>
                         <div class="content">
-                            <h4>Early Bird</h4>
+                            <h4>Perancangan dan Penganggaran</h4>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec graviante.
+                              Berbagi pengalaman dalam hal menginisiasi,menyusun perencanaan,penganggaran program dan memetakan berbagai sumber daya pendukung program
                             </p>
-                            <a href="#">read more</a>
                         </div>
                     </div>
                 </div>
@@ -237,7 +244,7 @@
 
 
     <!--speaker section-->
-    <section id="s3" class="pt100">
+    <section class="pt100">
         <div class="container">
             <div class="section_title mb50">
                 <h3 class="title">
@@ -246,101 +253,20 @@
             </div>
         </div>
         <div class="row justify-content-center no-gutters">
-            <div class="col-md-3 col-sm-6">
+            <div class="cover_item">
                 <div class="speaker_box">
                     <div class="speaker_img">
-                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s1.png" alt="speaker name">
-                        <div class="info_box">
-                            <h5 class="name">Patricia Stone</h5>
-                            <p class="position">CEO Company</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="speaker_box">
-                    <div class="speaker_img">
-                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s2.png" alt="speaker name">
-                        <div class="info_box">
-                            <h5 class="name">James Oliver</h5>
-                            <p class="position">CEO Company</p>
-                        </div>
-                    </div>
-                </div>
+                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/speaker1.png" alt="speaker name">
 
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="speaker_box">
-                    <div class="speaker_img">
-                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s3.png" alt="speaker name">
-                        <div class="info_box">
-                            <h5 class="name">Carla Banks</h5>
-                            <p class="position">CEO Company</p>
-                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="speaker_box">
-                    <div class="speaker_img">
-                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s4.png" alt="speaker name">
-                        <div class="info_box">
-                            <h5 class="name">William Smith</h5>
-                            <p class="position">CEO Company</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="speaker_box">
-                    <div class="speaker_img">
-                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s5.png" alt="speaker name">
-                        <div class="info_box">
-                            <h5 class="name">Jessica Black</h5>
-                            <p class="position">CEO Company</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="speaker_box">
-                    <div class="speaker_img">
-                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s6.png" alt="speaker name">
-                        <div class="info_box">
-                            <h5 class="name">Patricia Stone</h5>
-                            <p class="position">CEO Company</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="speaker_box">
-                    <div class="speaker_img">
-                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s7.png" alt="speaker name">
-                        <div class="info_box">
-                            <h5 class="name">Duncan Stan</h5>
-                            <p class="position">CEO Company</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="speaker_box">
-                    <div class="speaker_img">
-                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/s8.png" alt="speaker name">
-                        <div class="info_box">
-                            <h5 class="name">Patricia Stone</h5>
-                            <p class="position">CEO Company</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+          </div>
     </section>
     <!--speaker section end -->
 
     <!--Price section-->
-    <section class="pt100">
+    <section id="s3" class="pt100">
         <div class="container">
             <div class="section_title mb50">
                 <h3 class="title">
@@ -454,106 +380,16 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
     <!--price section end -->
 
-    <!--event calender-->
-    <section class="pt100 pb100">
-        <div class="container">
-            <div class="table-responsive">
-                <table class="event_calender table">
-                    <thead class="event_title">
-                        <tr>
-                            <th>
-                                <i class="ion-ios-calendar-outline"></i>
-                                <span>Event Calendar</span>
-                            </th>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <img src="<?php echo base_url() ?>assets/evento/assets/img/cleander/c1.png" alt="event">
-                            </td>
-                            <td class="event_date">
-                                14
-                                <span>February</span>
-                            </td>
-                            <td>
-                                <div class="event_place">
-                                    <h5>Conference in Amsterdam</h5>
-                                    <h6>08 AM - 04 PM</h6>
-                                    <p>Speaker: Daniel Hill</p>
-                                </div>
-                            </td>
-                            <td>
-                                <a href="#" class="btn btn-primary btn-rounded">Read More</a>
-                            </td>
-                            <td class="buy_link">
-                                <a href="#">buy now</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="<?php echo base_url() ?>assets/evento/assets/img/cleander/c2.png" alt="event">
-                            </td>
-                            <td class="event_date">
-                                18
-                                <span>February</span>
-                            </td>
-                            <td>
-                                <div class="event_place">
-                                    <h5>Conference in Amsterdam</h5>
-                                    <h6>08 AM - 04 PM</h6>
-                                    <p>Speaker: Daniel Hill</p>
-                                </div>
-                            </td>
-                            <td>
-                                <a href="#" class="btn btn-primary btn-rounded">Read More</a>
-                            </td>
-                            <td class="buy_link">
-                                <a href="#">buy now</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="<?php echo base_url() ?>assets/evento/assets/img/cleander/c3.png" alt="event">
-                            </td>
-                            <td class="event_date">
-                                22
-                                <span>February</span>
-                            </td>
-                            <td>
-                                <div class="event_place">
-                                    <h5>Conference in Amsterdam</h5>
-                                    <h6>08 AM - 04 PM</h6>
-                                    <p>Speaker: Daniel Hill</p>
-                                </div>
-                            </td>
-                            <td>
-                                <a href="#" class="btn btn-primary btn-rounded">Read More</a>
-                            </td>
-                            <td class="buy_link">
-                                <a href="#">buy now</a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
-    <!--event calender end -->
 
     <!--brands section -->
-    <section class="bg-gray pt100 pb100">
+    <section class="bg-gray pt50 pb100">
         <div class="container">
-            <div class="section_title mb50">
+            <div class="section_title mb100">
                 <h3 class="title">
                     our partners
                 </h3>
@@ -585,7 +421,7 @@
         <div class="container">
             <div class="section_title mb30">
                 <h3 class="title color-light">
-                    Modul
+                    Panduan Acara
                 </h3>
             </div>
             <div class="row justify-content-center align-items-center">
@@ -593,16 +429,10 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec gravida tempus. Integer iaculis in aazzzCurabitur a pulvinar nunc. Maecenas laoreet finibus lectus, at volutpat ligula euismod.
                 </div>
                 <div class="col-md-3 text-md-right text-center">
-                    <a href="#" class="btn btn-primary btn-rounded mt30">Download Modul</a>
+                    <a href="#" class="btn btn-primary btn-rounded mt30">Lihat Panduan Acara</a>
                 </div>
             </div>
         </div>
     </section>
     <!--get tickets section end-->
 
-    <?php
-    $this->load->view("_partials_home/footer");
-    ?>
-</body>
-
-</html>
