@@ -10,10 +10,17 @@
                                     Seminar dan Workshop
                                 </h2>
                                 <strong class="cover-xl-text">NASIONAL</strong>
+<<<<<<< HEAD
                                 <p class="cover-date">
                                   Tema: "Pemberdayaan Sosial Ekonomi"
                                 </p>
                                 <p class="cover-date">
+=======
+                                <p class="cover-date">
+                                  Tema: "Pemberdayaan Sosial Ekonomi"
+                                </p>
+                                <p class="cover-date">
+>>>>>>> master
                                 (Tanggal Acara)
                                 </p>
                                 <a href="#" class=" btn btn-primary btn-rounded">
@@ -55,12 +62,18 @@
                                 <strong class="cover-xl-text">Nasional</strong>
                                 <p class="cover-date">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                     12-20 February 2018 - Los Angeles, CA.
 =======
+=======
+>>>>>>> master
                                   “Pemberdayaan dan Pengembangan Sosial Ekonomi Masyarakat di Era 4.0”
                                 </p>
                                 <p class="cover-date">
                                   (Tanggal Acara)
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
                                 </p>
                             </div>
@@ -79,6 +92,7 @@
     </section>
     <!--cover section slider end -->
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     <!--event info -->
     <section id="s1" class="pt100 pb100">
@@ -133,6 +147,8 @@
     <!--event info end -->
 
 
+=======
+>>>>>>> master
 =======
 >>>>>>> master
     <!--event countdown -->
