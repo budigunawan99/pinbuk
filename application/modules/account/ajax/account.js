@@ -61,4 +61,34 @@ $(document).ready(function () {
     });
 
 
+    $('#loginadmin').on('submit', function (event) {
+        event.preventDefault();
+        $('.loader').show();
+        $.ajax({
+            url: BASE_URL + "Account/loginadmin",
+            method: "POST",
+            data: new FormData(this),
+            contentType: false,
+            cache: false,
+            processData: false,
+         
+            success: function (data) {
+                var str = data.replace(/\"/g, "");
+                $('.loader').hide();
+                if(str == "Anda berhasil login !"){
+                    window.location.href = BASE_URL + "admin";
+                } else{
+                    swal("Gagal", str, "error");
+                    update("Account/admin_login")
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                $('.loader').hide();
+                console.log("Status: " + textStatus, "error");
+                console.log("Error: " + errorThrown, "error");
+                swal("Gagal", "Login gagal ! Silahkan coba lagi !", "error");
+            },
+        });
+    });
+
 });

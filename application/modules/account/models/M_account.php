@@ -46,6 +46,11 @@
             $query = $this->db->query('SELECT nama FROM user where email = "' . $email . '"');
             return $query->row()->nama;
         }
+
+        public function masukadmin($username, $password){
+            $query = $this->db->get_where('admin',array('username'=>$username,'password' => hash('SHA256',$password)));
+            return $query;
+        }
         //  function Save($data,$table,$param)
         // {
         //     $query=$this->db->update($table,$data,array('gid' => $param["gid"],'tahun'=>$param["tahun"]));
