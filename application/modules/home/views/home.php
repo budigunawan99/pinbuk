@@ -175,16 +175,37 @@
                 </h3>
             </div>
         </div>
-        <div class="row justify-content-center no-gutters owl-carousel">
-                <div class="speaker_box">
-                    <div class="speaker_img">
-                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/speaker1.png" alt="speaker name">
-                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/speaker2.png" alt="speaker name">
-                        <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/speaker3.png" alt="speaker name">
-                    </div>
+        <div id="speaker" class="carousel slide" data-ride="carousel">
 
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#speaker" data-slide-to="0" class="active"></li>
+                <li data-target="#speaker" data-slide-to="1"></li>
+                <li data-target="#speaker" data-slide-to="2"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/speaker1.png" alt="speaker 1">
                 </div>
-          </div>
+                <div class="carousel-item">
+                    <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/speaker1.png" alt="speaker 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/speaker1.png" alt="speaker 3">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#speaker" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#speaker" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+        </div>
     </section>
     <!--speaker section slider end -->
 
