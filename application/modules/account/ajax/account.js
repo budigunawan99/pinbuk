@@ -76,7 +76,7 @@ $(document).ready(function () {
                 var str = data.replace(/\"/g, "");
                 $('.loader').hide();
                 if(str == "Anda berhasil login !"){
-                    window.location.href = BASE_URL + "admin";
+                    window.location.href = BASE_URL + "admin/dashboard";
                 } else{
                     swal("Gagal", str, "error");
                     update("Account/admin_login")

@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Admin extends CI_Controller
+class Registered_user extends CI_Controller
 {
 
 	function __Construct()
@@ -9,7 +9,7 @@ class Admin extends CI_Controller
 		parent::__Construct();
 	}
 
-	public function dashboard()
+	public function index()
 	{
 		//cek session username
 		if ($this->session->userdata('username') == '') {
@@ -20,7 +20,7 @@ class Admin extends CI_Controller
 			//alihkan ke halaman login
 			redirect(site_url('account/admin'));
 		} else {
-			$content = array('content' => $this->load->view('admin', '', true));
+			$content = array('content' => $this->load->view('registered_user', '', true));
 			$this->load->view('v_admin', $content);
 		}
 	}
