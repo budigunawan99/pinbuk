@@ -185,8 +185,8 @@
             </ul>
 
             <!-- The slideshow -->
-                <div class="carousel-item active">
             <div class="carousel-inner">
+                <div class="carousel-item active">
                     <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/speaker1.png" alt="speaker 1">
                 </div>
                 <div class="carousel-item">
