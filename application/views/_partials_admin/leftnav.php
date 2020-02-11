@@ -16,19 +16,19 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="<?php echo site_url() ?>/admin">
                 <span class="menu-title">Dashboard</span>
                 <i class="mdi mdi-home menu-icon"></i>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link" href="<?php echo site_url() ?>/admin/photo" aria-expanded="false" aria-controls="ui-basic">
                 <span class="menu-title">Foto Kegiatan</span>
                 <i class="mdi mdi-contacts menu-icon"></i>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="<?php echo base_url() ?>assets/admin/pages/forms/basic_elements.html">
+            <a class="nav-link" href="<?php echo site_url() ?>/admin/registered-user">
                 <span class="menu-title">Pendaftar</span>
                 <i class="mdi mdi-format-list-bulleted menu-icon"></i>
             </a>
