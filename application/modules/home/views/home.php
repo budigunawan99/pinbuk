@@ -182,6 +182,9 @@
                 <li data-target="#speaker" data-slide-to="0" class="active"></li>
                 <li data-target="#speaker" data-slide-to="1"></li>
                 <li data-target="#speaker" data-slide-to="2"></li>
+                <li data-target="#speaker" data-slide-to="3"></li>
+                <li data-target="#speaker" data-slide-to="4"></li>
+                <li data-target="#speaker" data-slide-to="5"></li>
             </ul>
 
             <!-- The slideshow -->
@@ -190,10 +193,19 @@
                     <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/speaker1.png" alt="speaker 1">
                 </div>
                 <div class="carousel-item">
-                    <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/speaker1.png" alt="speaker 2">
+                    <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/speaker2.png" alt="speaker 2">
                 </div>
                 <div class="carousel-item">
-                    <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/speaker1.png" alt="speaker 3">
+                    <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/speaker3.png" alt="speaker 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/workshop1.png" alt="speaker 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/workshop2.png" alt="speaker 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="<?php echo base_url() ?>assets/evento/assets/img/speakers/workshop3.png" alt="speaker 3">
                 </div>
             </div>
 
@@ -216,115 +228,14 @@
                 <h3 class="title">
                     Timeline Acara
                 </h3>
+              </div>
+              <div class="container">
+                <div class="timeline">
+                    <div class="timeline_img">
+                      <img src="<?php echo base_url() ?>assets/evento/assets/img/timeline3.png" alt="Timeline Acara">
+                    </div>
+                </div>
             </div>
-
-            <div class="row justify-content-center">
-                <div class="col-md-4 col-12">
-                    <div class="price_box active">
-                        <div class="price_highlight">
-                            recommended
-                        </div>
-                        <div class="price_header">
-                            <h4>
-                                Early Bird
-                            </h4>
-                            <h6>
-                                For the fast ones
-                            </h6>
-                        </div>
-                        <div class="price_tag">
-                            65 <sup>$</sup>
-                        </div>
-                        <div class="price_features">
-                            <ul>
-                                <li>
-                                    Early Entrance
-                                </li>
-                                <li>
-                                    Front seat
-                                </li>
-                                <li>
-                                    Complementary Drinks
-                                </li>
-                                <li>
-                                    Promo Gift
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="price_footer">
-                            <a href="#" class="btn btn-primary btn-rounded">Purchase</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12">
-                    <div class="price_box">
-                        <div class="price_header">
-                            <h4>
-                                Start up
-                            </h4>
-                            <h6>
-                                For the begginers
-                            </h6>
-                        </div>
-                        <div class="price_tag">
-                            85 <sup>$</sup>
-                        </div>
-                        <div class="price_features">
-                            <ul>
-                                <li>
-                                    Early Entrance
-                                </li>
-                                <li>
-                                    Front seat
-                                </li>
-                                <li>
-                                    Complementary Drinks
-                                </li>
-                                <li>
-                                    Promo Gift
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="price_footer">
-                            <a href="#" class="btn btn-primary btn-rounded">Purchase</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12">
-                    <div class="price_box">
-                        <div class="price_header">
-                            <h4>
-                                Corporate
-                            </h4>
-                            <h6>
-                                For the business
-                            </h6>
-                        </div>
-                        <div class="price_tag">
-                            95 <sup>$</sup>
-                        </div>
-                        <div class="price_features">
-                            <ul>
-                                <li>
-                                    Early Entrance
-                                </li>
-                                <li>
-                                    Front seat
-                                </li>
-                                <li>
-                                    Complementary Drinks
-                                </li>
-                                <li>
-                                    Promo Gift
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="price_footer">
-                            <a href="#" class="btn btn-primary btn-rounded">Purchase</a>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </section>
     <!--price section end -->
@@ -361,7 +272,7 @@
     <!--brands section end-->
 
     <!--get tickets section -->
-    <section id="s4" class="bg-img pt100 pb100" style="background-image: url('<?php echo base_url() ?>assets/evento/assets/img/bg/tickets.png');">
+    <section id="s4" class="bg-img pt100 pb100" style="background-image: url('<?php echo base_url() ?>assets/evento/assets/img/bg/bgnew.png');">
         <div class="container">
             <div class="section_title mb30">
                 <h3 class="title color-light">

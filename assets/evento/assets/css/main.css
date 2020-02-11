@@ -124,7 +124,7 @@ ul.nosyely_list {
   width: 30px;
   content: " ";
   position: absolute;
-  border-top: solid 3px #f50136;
+  border-top: solid 5px #28624e;
   left: 0;
   top: 0;
 }
@@ -1754,12 +1754,13 @@ header.sticky_header {
 3 Footer
 -------------------------------------------------------- */
 footer {
-  padding: 50px 0 100px;
+  padding: 20px 0 80px;
   background-color: #6EBE90;
 }
 footer .footer_box {
   position: relative;
   margin-top: 50px;
+  margin-bottom: 30px;
 }
 footer .footer_box h4.footer_title {
   text-transform: uppercase;
@@ -2495,6 +2496,22 @@ Cover
 /*  ----------------------------------------------------
 7 Price box
 -------------------------------------------------------- */
+.timeline{
+    position: relative;
+    overflow: hidden;
+}
+.timeline .timeline_img {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  padding-top: 10px 0;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
 .price_box {
   position: relative;
   padding: 75px 30px;
