@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
-
+    <?php
+    $this->load->view("_partials_home/header");
+    ?>
     <!--===============================================================================================-->
     <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
     <!--===============================================================================================-->
@@ -26,20 +28,6 @@
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/form/css/util.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/form/css/main.css">
-    <!--===============================================================================================-->
-    <?php
-    $this->load->view("_partials_home/header");
-    ?>
-</head>
-
-<body id="myPage">
-    <?php
-    $this->load->view("_partials_home/loader");
-    $this->load->view("_partials_form/content");
-    ?>
-
-    <!--===============================================================================================-->
-    <script src="<?php echo base_url() ?>assets/form/vendor/jquery/jquery-3.2.1.min.js"></script>
     <!--===============================================================================================-->
     <script src="<?php echo base_url() ?>assets/form/vendor/animsition/js/animsition.min.js"></script>
     <!--===============================================================================================-->
@@ -103,6 +91,13 @@
         include(APPPATH . "/modules/account/ajax/account.js");
         ?>
     </script>
+</head>
+
+<body id="myPage">
+    <?php
+    $this->load->view("_partials_home/loader");
+    $this->load->view("_partials_form/content");
+    ?>
     <?php
     $this->load->view("_partials_home/footer");
     ?>

@@ -22,6 +22,12 @@ class Account extends CI_Controller
         $this->load->view('v_form', $content);
     }
 
+    public function admin()
+    {
+        $content = array('content' => $this->load->view('admin_v_login', '', true));
+        $this->load->view('v_form', $content);
+    }
+
     public function registrasi_view()
     {
         $content = $this->load->view('v_register', '', true);
@@ -31,6 +37,12 @@ class Account extends CI_Controller
     public function login_view()
     {
         $content = $this->load->view('v_login', '', true);
+        $this->output->set_output($content);
+    }
+
+    public function admin_login()
+    {
+        $content = $this->load->view('admin_v_login', '', true);
         $this->output->set_output($content);
     }
 
@@ -181,9 +193,53 @@ class Account extends CI_Controller
                 //redirect ke halaman login
                 // redirect(site_url('warkop/login'));
             }
-        }else{
+        } else {
             $msg = "Isi form login dengan benar !";
         }
+        echo json_encode($msg);
+    }
+
+    public function loginadmin()
+    {
+        $valid = $this->form_validation;
+        $username = $this->input->post('username');
+        $password = $this->input->post('password');
+        $valid->set_rules('username', 'USERNAME', 'required');
+        $valid->set_rules('password', 'Password', 'required');
+
+        if ($valid->run()) {
+            $user = $this->M_account->masukadmin($username, $password);
+            if ($user->num_rows() == 1) {
+                $data = $user->row_array();
+                //set session user
+                $this->session->set_userdata('masuk', TRUE);
+                $this->session->set_userdata('username', $data['username']);
+                $this->session->set_userdata('id', $data['id']);
+                $this->session->set_userdata('id_admin_cache', uniqid(rand()));
+                $msg = "Anda berhasil login !";
+                //redirect ke halaman dashboard
+                // redirect(site_url('home'));
+            } else {
+
+                //jika tidak ada, set notifikasi dalam flashdata.
+                // $this->session->set_flashdata('sukses', 'WRONG USERNAME/PASSWORD. TRY AGAIN ... ');
+                $msg = "Username atau password salah. Silahkan coba lagi !";
+                //redirect ke halaman login
+                // redirect(site_url('warkop/login'));
+            }
+        } else {
+            $msg = "Isi form login dengan benar !";
+        }
+        echo json_encode($msg);
+    }
+
+    public function logoutadmin()
+    {
+        $this->session->unset_userdata('masuk');
+        $this->session->unset_userdata('username');
+        $this->session->unset_userdata('id');
+        $this->session->unset_userdata('id_admin_cache');
+        $msg = "Anda berhasil logout";
         echo json_encode($msg);
     }
 

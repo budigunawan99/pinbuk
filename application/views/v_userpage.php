@@ -9,24 +9,12 @@
             margin-right: 3px;
             border-radius: 50%;
         } */
-        .formdaftar{
+        .formdaftar {
             background-color: white;
         }
     </style>
     <?php
     $this->load->view("_partials_home/header");
-    ?>
-
-</head>
-
-<body id="myPage">
-    <?php
-    $this->load->view("_partials_home/loader");
-    $this->load->view("_partials_userpage/content");
-    ?>
-
-    <?php
-    $this->load->view("_partials_home/footer");
     ?>
     <script src="<?php echo base_url() ?>assets/evento/assets/js/jquery.validate.min.js"></script>
     <script>
@@ -128,6 +116,17 @@
         ?>
     </script>
 
+</head>
+
+<body id="myPage">
+    <?php
+    $this->load->view("_partials_home/loader");
+    $this->load->view("_partials_userpage/content");
+    ?>
+
+    <?php
+    $this->load->view("_partials_home/footer");
+    ?>
 </body>
 
 </html>

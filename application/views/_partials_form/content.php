@@ -18,6 +18,9 @@
                  <li class="nav-item">
                      <a class="nav-link menu-form" data-val="Account/login_view">Login</a>
                  </li>
+                 <li class="nav-item">
+                     <a class="nav-link menu-form" data-val="Account/admin_login">Admin</a>
+                 </li>
              </ul>
          </div>
      </div>
