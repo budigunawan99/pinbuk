@@ -5,13 +5,14 @@ class Home extends CI_Controller {
 
 	function __Construct(){
 		parent::__Construct ();
+		$this->load->model('M_home');
 	}
 
 	public function index()
 	{
-		$content = array('content' => $this->load->view('home', '', true));
+		$data['galeri']=$this->M_home->getAll('foto_kegiatan');
+		$content = array('content' => $this->load->view('home', $data, true));
         $this->load->view('v_home', $content);
 	}
-
 
 }

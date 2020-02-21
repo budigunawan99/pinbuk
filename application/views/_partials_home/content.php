@@ -19,13 +19,13 @@
                     <a class="nav-link " href="#s3">Jadwal</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#s4">Panduan Acara</a>
+                    <a class="nav-link " href="#s4">Galeri</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#s4">Contact</a>
+                    <a class="nav-link " href="#s5">FAQ</a>
                 </li>
                 <?php
-                if ($this->session->userdata('email') == '') {
+                if ($this->session->userdata('email_user') == '' && $this->session->userdata('username_admin') == '') {
                 ?>
                     <li class="nav-item">
                         <a class="nav-link menu-app" href="<?php echo site_url() ?>/account">Registrasi</a>
@@ -43,7 +43,11 @@
                                 <div class="media-body d-lg-block">
                                     <span class="mb-0 text-sm  font-weight-bold">
                                         <?php
-                                        $str = $this->session->userdata('nama');
+                                        if ($this->session->userdata('email_user')) {
+                                            $str = $this->session->userdata('nama_user');
+                                        } else if ($this->session->userdata('username_admin')) {
+                                            $str = $this->session->userdata('username_admin');
+                                        }
                                         $myname = explode(" ", $str);
                                         echo $myname[0];
                                         ?>
@@ -54,8 +58,13 @@
                             </div>
                         </a>
                         <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
-
-                            <a class="dropdown-item menudaftar" href="<?php echo site_url() ?>/userpage">My page</a>
+                            <?php
+                            if ($this->session->userdata('email_user')) {
+                                echo '<a class="dropdown-item menudaftar" href="'.site_url().'/userpage">My page</a>';
+                            }else if ($this->session->userdata('username_admin')) {
+                                echo '<a class="dropdown-item menudaftar" href="'.site_url().'/admin/dashboard">Admin page</a>';
+                            }
+                            ?>
                             <a class="dropdown-item logout" data-val="Account/logout">
                                 <i class="ni ni-user-run"></i>
                                 <span>Logout</span>

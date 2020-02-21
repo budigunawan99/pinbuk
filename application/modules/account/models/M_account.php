@@ -9,7 +9,7 @@
         function daftar($table,$data)
         {
              $this->db->insert($table,$data);
-             return $this->db->insert_id();
+            //  return $this->db->insert_id();
         }
 
         function checkemail($table, $email){
@@ -50,6 +50,11 @@
         public function masukadmin($username, $password){
             $query = $this->db->get_where('admin',array('username'=>$username,'password' => hash('SHA256',$password)));
             return $query;
+        }
+
+        public function get_current_id(){
+            $query = $this->db->query('SELECT max(id) as last_id FROM user');
+            return $query->row()->last_id;
         }
         //  function Save($data,$table,$param)
         // {

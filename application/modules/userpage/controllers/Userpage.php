@@ -8,30 +8,29 @@ class Userpage extends CI_Controller
 	{
 		parent::__Construct();
 		$this->load->model('M_userpage'); //call model
-	}
-
-	public function index()
-	{
 		//cek session username
-		if ($this->session->userdata('email') == '') {
+		if ($this->session->userdata('email_user') == '') {
 
 			//set notifikasi
 			$this->session->set_flashdata('gagal', 'You have not login...');
 
 			//alihkan ke halaman login
 			redirect(site_url('account/logindirect'));
-		} else {
-			$id = $this->session->userdata('id');
-			$data['av_activity'] = $this->M_userpage->check_db_a("daftar_workshop", "id_user", $id);
-			$data['activity'] = $this->M_userpage->getUserWorkshop($id);
-			$content = array('content' => $this->load->view('aktivitas', $data, true));
-			$this->load->view('v_userpage', $content);
 		}
+	}
+
+	public function index()
+	{
+		$id = $this->session->userdata('id_user');
+		$data['registered'] = $this->M_userpage->check_db("daftar_workshop", "id_user", $id, "status", "0,1");
+		$data['namaworkshop'] = $this->M_userpage->get_workshop();
+		$content = array('content' => $this->load->view('daftarworkshop', $data, true));
+		$this->load->view('v_userpage', $content);
 	}
 
 	public function aktivitas()
 	{
-		$id = $this->session->userdata('id');
+		$id = $this->session->userdata('id_user');
 		$data['av_activity'] = $this->M_userpage->check_db_a("daftar_workshop", "id_user", $id);
 		$data['activity'] = $this->M_userpage->getUserWorkshop($id);
 		$content = $this->load->view('aktivitas', $data, true);
@@ -46,6 +45,8 @@ class Userpage extends CI_Controller
 
 	public function daftarworkshop()
 	{
+		$id = $this->session->userdata('id_user');
+		$data['registered'] = $this->M_userpage->check_db("daftar_workshop", "id_user", $id, "status", "0,1");
 		$data['namaworkshop'] = $this->M_userpage->get_workshop();
 		$content = $this->load->view('daftarworkshop', $data, true);
 		$this->output->set_output($content);
@@ -59,13 +60,13 @@ class Userpage extends CI_Controller
 
 	public function input()
 	{
-		$nama = $this->input->post('nama');
 		$email = $this->input->post('email');
 		$alamat = $this->input->post('alamat');
+		$no_hp = $this->input->post('no_hp');
 		$jenis_workshop = $this->input->post('jenis_workshop');
 		$id_user = $this->M_userpage->getIdByEmail($email);
-		if ($this->M_userpage->check_db("daftar_workshop", "id_user", $id_user, "id_workshop", $jenis_workshop) == true) {
-			$msg = "Duplikat email untuk program yang sama";
+		if ($this->M_userpage->check_db("daftar_workshop", "id_user", $id_user, "status", "0,1") == true) {
+			$msg = "Pendaftaran gagal ! Anda hanya dapat mengikuti satu workshop saja";
 		} else {
 			$config['upload_path'] = './uploads/payment';
 			$config['allowed_types'] = 'pdf|jpeg|jpg|png';
@@ -88,6 +89,7 @@ class Userpage extends CI_Controller
 						'id_user' => $id_user,
 						'id_workshop' => $jenis_workshop,
 						'alamat' => $alamat,
+						'no_hp' => $no_hp,
 						'bukti_pembayaran' => $this->upload->data('file_name')
 					);
 					$status = $this->M_userpage->insert_data('daftar_workshop', $data_regis);

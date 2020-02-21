@@ -8,6 +8,13 @@ class Account extends CI_Controller
     {
         parent::__construct();
         $this->load->model('M_account');
+        $this->session->unset_userdata('email_user');
+        $this->session->unset_userdata('id_user_cache');
+        $this->session->unset_userdata('id_user');
+        $this->session->unset_userdata('nama_user');
+        $this->session->unset_userdata('username_admin');
+        $this->session->unset_userdata('id_admin');
+        $this->session->unset_userdata('id_admin_cache');
     }
 
     public function index()
@@ -96,8 +103,9 @@ class Account extends CI_Controller
                 $data['code'] = $code;
                 $data['active'] = false;
 
-                $id = $this->M_account->daftar('user', $data);
-
+                $id = $this->M_account->get_current_id();
+                $id+=1;
+                $data['id']=$id;
                 $message =     "
 						<html>
 						<head>
@@ -120,12 +128,13 @@ class Account extends CI_Controller
                 $this->email->message($message);
 
                 if ($this->email->send()) {
+                    $this->M_account->daftar('user', $data);
                     // $this->session->set_flashdata('message', "Send Email");
                     // $this->session->set_flashdata('sukses', 'Pendaftaran berhasil. Silahkan login!');
                     $msg = "Email berhasil terkirim. Silahkan aktivasi akun untuk melanjutkan login !";
                     // redirect(site_url('home'));
                 } else {
-                    $msg = "Email tidak berhasil terkirim. Silahkan coba lagi !";
+                    $msg = "Periksa email atau koneksi anda dan silahkan coba lagi !";
                 }
             }
         }
@@ -175,10 +184,10 @@ class Account extends CI_Controller
                     $id   =  $this->M_account->getIdByEmail($email);
                     $nama =  $this->M_account->getNamaByEmail($email);
                     //set session user
-                    $this->session->set_userdata('email', $email);
-                    $this->session->set_userdata('nama', $nama);
-                    $this->session->set_userdata('id_login_cache', uniqid(rand()));
-                    $this->session->set_userdata('id', $id);
+                    $this->session->set_userdata('email_user', $email);
+                    $this->session->set_userdata('nama_user', $nama);
+                    $this->session->set_userdata('id_user_cache', uniqid(rand()));
+                    $this->session->set_userdata('id_user', $id);
                     $msg = "Anda berhasil login !";
                     //redirect ke halaman dashboard
                     // redirect(site_url('home'));
@@ -212,9 +221,8 @@ class Account extends CI_Controller
             if ($user->num_rows() == 1) {
                 $data = $user->row_array();
                 //set session user
-                $this->session->set_userdata('masuk', TRUE);
-                $this->session->set_userdata('username', $data['username']);
-                $this->session->set_userdata('id', $data['id']);
+                $this->session->set_userdata('username_admin', $data['username']);
+                $this->session->set_userdata('id_admin', $data['id']);
                 $this->session->set_userdata('id_admin_cache', uniqid(rand()));
                 $msg = "Anda berhasil login !";
                 //redirect ke halaman dashboard
@@ -235,9 +243,8 @@ class Account extends CI_Controller
 
     public function logoutadmin()
     {
-        $this->session->unset_userdata('masuk');
-        $this->session->unset_userdata('username');
-        $this->session->unset_userdata('id');
+        $this->session->unset_userdata('username_admin');
+        $this->session->unset_userdata('id_admin');
         $this->session->unset_userdata('id_admin_cache');
         $msg = "Anda berhasil logout";
         echo json_encode($msg);
@@ -245,10 +252,10 @@ class Account extends CI_Controller
 
     public function logout()
     {
-        $this->session->unset_userdata('email');
-        $this->session->unset_userdata('id_login_cache');
-        $this->session->unset_userdata('id');
-        $this->session->unset_userdata('nama');
+        $this->session->unset_userdata('email_user');
+        $this->session->unset_userdata('id_user_cache');
+        $this->session->unset_userdata('id_user');
+        $this->session->unset_userdata('nama_user');
         $msg = "Anda berhasil logout";
         echo json_encode($msg);
     }

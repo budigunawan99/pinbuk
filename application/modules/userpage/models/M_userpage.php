@@ -28,9 +28,10 @@ class M_userpage extends CI_Model
         }
     } 
 
-    function check_db($table, $column, $value, $targetcol, $target)
+    function check_db($table, $column, $value, $column1, $value1)
     {
-        $query = $this->db->get_where($table, array($column => $value, $targetcol => $target));
+        $query = $this->db->query("select * from $table where $column ='$value' AND $column1 IN ($value1)");
+        // $query = $this->db->get_where($table, array($column => $value, $targetcol => $target));
         if ($query->num_rows() > 0) {
             return true;
         } else {

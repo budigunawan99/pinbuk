@@ -17,7 +17,7 @@ $(document).ready(function () {
                     swal("Berhasil", str, "success");
                     update("Account/login_view")
                 } else {
-                    swal("Gagal", str, "error");
+                    swal("Gagal", "Periksa email atau koneksi anda dan silahkan coba lagi !", "error");
                     update("Account/registrasi_view")
                 }
             },
@@ -25,7 +25,7 @@ $(document).ready(function () {
                 $('.loader').hide();
                 console.log("Status: " + textStatus, "error");
                 console.log("Error: " + errorThrown, "error");
-                swal("Gagal", "Register gagal ! Silahkan coba lagi !", "error");
+                swal("Gagal", "Periksa email atau koneksi anda dan silahkan coba lagi !", "error");
             },
         });
     });

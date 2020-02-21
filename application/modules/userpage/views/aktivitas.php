@@ -45,19 +45,19 @@
                              <td>
                                  <div class="event_place">
                                      <h5><?php echo $a->nama ?></h5>
-                                     <h6><?php echo $a->jam_mulai ?> - selesai</h6>
-                                     <p>
-                                         Status :
+                                     <h6><?php echo $a->jam_mulai ?> - selesai</h6>                                     
+                                         <h6>Status :
                                          <?php
                                             $status = $a->status;
                                             if ($status == 0) {
-                                                echo " added to waiting list";
-                                            } else {
-                                                echo " verified by admin";
+                                                echo " <span style='background-color: #ff9800;color: white;'>added to waiting list</span>";
+                                            } else if ($status == 1){
+                                                echo " <span style='background-color: #4CAF50;color: white;'>verified by admin</span>";
+                                            } else{
+                                                echo " <span style='background-color: #f44336;color: white;'>rejected</span>";
                                             }
-                                            ?>
-
-                                     </p>
+                                            ?>     
+                                            </h6>                                
                                  </div>
                              </td>
                          </tr>

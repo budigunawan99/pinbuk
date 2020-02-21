@@ -1,8 +1,8 @@
 <!-- ========== Meta Tags ========== -->
 <meta charset="UTF-8">
-<meta name="description" content="Evento -Event Html Template">
-<meta name="keywords" content="Evento , Event , Html, Template">
-<meta name="author" content="ColorLib">
+<meta name="description" content="Milad PINBUK ke-25">
+<meta name="keywords" content="pinbuk , ussi , ojk, wakaf">
+<meta name="author" content="Informatika Unsyiah">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <!-- ========== Title ========== -->
 <title>Milad Pinbuk 25th</title>
@@ -20,10 +20,12 @@
 <link href="<?php echo base_url() ?>assets/evento/assets/css/owl.theme.default.min.css" rel="stylesheet">
 <!-- Animate CSS -->
 <link rel="stylesheet" href="<?php echo base_url() ?>assets/evento/assets/css/animate.min.css">
+<link rel="stylesheet" href="<?php echo base_url() ?>assets/evento/assets/css/jquery.fancybox.min.css">
 <!-- Custom styles for this template -->
 <link href="<?php echo base_url() ?>assets/evento/assets/css/main.css" rel="stylesheet">
 <!-- jquery -->
 <script src="<?php echo base_url() ?>assets/evento/assets/js/jquery.min.js"></script>
+<script src="<?php echo base_url() ?>assets/evento/assets/js/jquery.magnific-popup.min.js"></script>
 <!-- bootstrap -->
 <script src="<?php echo base_url() ?>assets/evento/assets/js/popper.js"></script>
 <script src="<?php echo base_url() ?>assets/evento/assets/js/bootstrap.min.js"></script>
