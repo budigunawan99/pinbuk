@@ -13,6 +13,9 @@
                      <a class="nav-link" href="<?php echo site_url() ?>/home">Home</a>
                  </li>
                  <li class="nav-item">
+                     <a class="nav-link menu-app menudaftar" data-val="Userpage/daftarworkshop">Daftar-workshop</a>
+                 </li>
+                 <li class="nav-item">
                      <a class="nav-link menu-app" data-val="Userpage/aktivitas">Aktivitas</a>
                  </li>
                  <li class="nav-item">
@@ -25,7 +28,7 @@
                              <div class="media-body d-lg-block">
                                  <span class="mb-0 text-sm  font-weight-bold">
                                      <?php
-                                        $str = $this->session->userdata('nama');
+                                        $str = $this->session->userdata('nama_user');
                                         $myname = explode(" ", $str);
                                         echo $myname[0];
                                         ?>
@@ -37,7 +40,7 @@
                      </a>
                      <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
 
-                         <a class="dropdown-item menu-app menudaftar" data-val="Userpage/daftarworkshop">Daftar Workshop</a>
+                         <!-- <a class="dropdown-item menu-app menudaftar" data-val="Userpage/daftarworkshop">Daftar Workshop</a> -->
                          <a class="dropdown-item logout" data-val="Account/logout">
                              <i class="ni ni-user-run"></i>
                              <span>Logout</span>

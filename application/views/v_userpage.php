@@ -12,6 +12,9 @@
         .formdaftar {
             background-color: white;
         }
+        .help-block{
+            color:red;
+        }
     </style>
     <?php
     $this->load->view("_partials_home/header");

@@ -14,3 +14,9 @@
   <link rel="stylesheet" href="<?php echo base_url() ?>assets/admin/assets/css/style.css">
   <!-- End layout styles -->
   <link rel="shortcut icon" href="<?php echo base_url() ?>assets/admin/assets/images/favicon.png" />
+  <link href="<?php echo base_url() ?>assets/lightbox2/dist/css/lightbox.css" rel="stylesheet" />
+  <style>
+    .btn-tabl{
+       margin-left:1.5625rem;      
+    }
+  </style>

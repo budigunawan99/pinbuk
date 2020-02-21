@@ -17,22 +17,22 @@
             <li class="nav-item nav-profile dropdown">
                 <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
                     <div class="nav-profile-img">
-                        <img src="<?php echo base_url() ?>assets/admin/assets/images/faces/face1.jpg" alt="image">
+                        <img src="<?php echo base_url() ?>assets/images/user.png" alt="image">
                         <span class="availability-status online"></span>
                     </div>
                     <div class="nav-profile-text">
-                        <p class="mb-1 text-black">Siti Alifah</p>
+                        <p class="mb-1 text-black"><?php echo strtoupper($this->session->userdata('username_admin')); ?></p>
                     </div>
                 </a>
                 <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
-                    <a class="dropdown-item" href="#">
-                        <i class="mdi mdi-cached mr-2 text-success"></i> Activity Log </a>
+                    <a class="dropdown-item" href="<?php echo site_url() ?>/home">
+                        <i class="mdi mdi-cached mr-2 text-success"></i> Home </a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item logout" href="#" data-val="Account/logoutadmin">
                         <i class="mdi mdi-logout mr-2 text-primary"></i> Logout </a>
                 </div>
             </li>
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
                 <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
                     <i class="mdi mdi-bell-outline"></i>
                     <span class="count-symbol bg-danger"></span>
@@ -78,8 +78,7 @@
                     <div class="dropdown-divider"></div>
                     <h6 class="p-3 mb-0 text-center">See all notifications</h6>
                 </div>
-            </li>
-            </li>
+            </li> -->
         </ul>
         <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
             <span class="mdi mdi-menu"></span>

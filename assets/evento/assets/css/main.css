@@ -31,12 +31,12 @@ body {
   line-height: 25px;
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
-  color: #838383;
+  color: #ffffff;
   font-style: normal;
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, h7 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: #18181c;
@@ -54,8 +54,9 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: 36px;
+  font-size: 20px;
   margin-bottom: 25px;
+  font-weight: 700;
 }
 
 h4, .h4 {
@@ -118,15 +119,19 @@ ul.nosyely_list {
 .section_title .title {
   text-transform: uppercase;
   padding: 10px 0;
-  font-size: 36px;
+  font-size: 60px;
+  text-align: center;
 }
-.section_title .title:before {
-  width: 30px;
+.section_title .title:after {
+  width: 100px;
   content: " ";
   position: absolute;
-  border-top: solid 3px #f50136;
-  left: 0;
-  top: 0;
+  border-top: solid 8px #f28256;
+  display:table-cell;
+  margin-top:.75rem;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 
 .countdown {
@@ -157,6 +162,36 @@ ul.nosyely_list {
   background-position: center center;
   position: relative;
 }
+.bg-img .bg-shape-1 {
+  position: absolute;
+  left: 40px;
+  top: -90px;
+  margin-bottom: 20px;
+}
+
+.ass-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+
+.bg-img .bg-shape-2 {
+  position: absolute;
+  bottom: -35px;
+}
+.ass-img .bg-shape-3 {
+  position: absolute;
+  top: 0 px;
+  margin-bottom: 20px;
+}
+
+.ass-img .bg-shape-4 {
+  position: absolute;
+  top: -50px;
+  margin-bottom: 20px;
+}
+
 .bg-img .overlay_dark {
   position: absolute;
   top: 0;
@@ -237,6 +272,10 @@ blockquote p {
   font-style: italic;
 }
 
+.clearfix{
+  overflow: auto;
+}
+
 .text-muted {
   color: #868e96 !important;
   font-size: 14px;
@@ -281,7 +320,7 @@ img {
     margin-bottom: 15px;
   }
 
-  h3, .h3 {
+  h3, .h3, .section_title .title {
     font-size: 20px;
     margin-bottom: 15px;
   }
@@ -441,7 +480,7 @@ img {
 }
 
 .bg-gray {
-  background-color: #f0f2f6 !important;
+  background-color: #ffffff !important;
 }
 
 .bg-black {
@@ -1703,6 +1742,9 @@ header li ul.sub_menu li a:hover {
   padding: 0;
 }
 
+.container2{
+  padding: none;
+}
 header.sticky_header {
   background-color: #F28256;
   margin: 0;
@@ -1750,16 +1792,40 @@ header.sticky_header {
     width: 100%;
   }
 }
+/* ------ quotes ----*/
+
+.quotes {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: justify;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
 /*  ----------------------------------------------------
 3 Footer
 -------------------------------------------------------- */
 footer {
-  padding: 50px 0 100px;
-  background-color: #6EBE90;
+  padding: 60px 0 50px;
+  background-color: #444242;
 }
+.section_footer {
+  position: relative;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  padding: -10px;
+
+}
+
 footer .footer_box {
   position: relative;
-  margin-top: 50px;
+  margin-top: 40px;
+  margin-bottom: 0px;
 }
 footer .footer_box h4.footer_title {
   text-transform: uppercase;
@@ -1771,13 +1837,14 @@ footer .footer_box h4.footer_title:before {
   width: 30px;
   content: " ";
   position: absolute;
-  border-top: solid 3px #f50136;
+  border-top: solid 3px #f9c37f;
   left: 0;
   top: 0;
 }
 footer .footer_header {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
+
 footer .footer_social {
   list-style: none;
   padding: 0;
@@ -1788,18 +1855,18 @@ footer .footer_social li {
   margin: 5px;
 }
 footer .footer_social li a {
-  border: solid 1px #f50136;
+  border: solid 1px #F9C37F;
   display: block;
   border-radius: 50px;
   padding: 7px 0;
   font-size: 24px;
-  color: #f50136;
+  color: #F9C37F;
   width: 40px;
   height: 40px;
   text-align: center;
 }
 footer .footer_social li a:hover {
-  background-color: #f50136;
+  background-color: #F28256;
   color: #ffffff;
 }
 footer ul.instagram_list {
@@ -1813,10 +1880,12 @@ footer ul.instagram_list li {
   margin: 0 0 2% 2%;
   float: left;
 }
-footer .newsletter_form .form-control {
-  background-color: #1f1039;
-  border: solid 1px #1f1039;
-  font-weight: 500;
+footer .newsletter_form li {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 0 15px;
+  line-height: 24px;
+  font-weight: 400;
   color: #ffffff;
 }
 
@@ -1868,13 +1937,12 @@ footer .newsletter_form .form-control {
   outline: 0 !important;
   border: none;
   cursor: pointer;
-  background-color: #18181c;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 .btn:hover {
-  color: #18181c;
-  background-color: #fff;
+  color: #367160;
+  background-color: transparent;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
@@ -1892,6 +1960,11 @@ footer .newsletter_form .form-control {
   padding: 18px 50px;
 }
 
+.alur-pendaftaran p{
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: justify;
+}
 .btn_center {
   margin: 0 auto;
   display: block;
@@ -1911,8 +1984,7 @@ footer .newsletter_form .form-control {
 }
 
 .btn-primary {
-  background-color: #F28256;
-  border: solid 1px #F28256;
+  background-image: linear-gradient(to right, #ff7e5f 0%, #feb47b 51%, #ff7e5f 100%);
   color: #ffffff;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
@@ -1920,7 +1992,6 @@ footer .newsletter_form .form-control {
 .btn-primary:hover {
   background-color: #F9C37F;
   color: #ffffff;
-  border: solid 1px #F9C37F;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
@@ -2032,7 +2103,7 @@ Cover
 .cover_slider .cover_item .slider_content .slider-content-inner .cover-xl-text {
   opacity: 0;
   text-transform: uppercase;
-  font-size: 90px;
+  font-size: 80px;
   font-weight: 900;
   line-height: 1.1;
   color: #F9C37F;
@@ -2314,7 +2385,9 @@ Cover
 }
 .icon_box_one i {
   margin-top: -10px;
-  padding: 0 15px;
+  padding: 30px 15px;
+  padding-left: 90px;
+  padding-bottom: 10px;
   font-size: 72px;
   color: #F9C37F;
   vertical-align: middle;
@@ -2331,7 +2404,8 @@ Cover
 }
 .icon_box_one .content h4 {
   color: #ffffff;
-  margin-bottom: 15px;
+  padding-top: -10px;
+  margin-bottom: 10px;
   text-transform: capitalize;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -2418,6 +2492,14 @@ Cover
 .speaker_box .speaker_img {
   position: relative;
   overflow: hidden;
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  padding: 150px 0;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
 }
 .speaker_box .speaker_img img {
   width: 100%;
@@ -2487,6 +2569,21 @@ Cover
 /*  ----------------------------------------------------
 7 Price box
 -------------------------------------------------------- */
+.timeline{
+    position: relative;
+    overflow: hidden;
+}
+.timeline .timeline_img {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  padding-top: 10px 0;
+  margin-bottom: 6rem;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
 .price_box {
   position: relative;
   padding: 75px 30px;
@@ -2497,7 +2594,7 @@ Cover
   transition: all ease-in-out 0.4s;
 }
 .price_box .price_highlight {
-  background-color: #f50136;
+  background-color: #f28256;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 12px;
@@ -2522,11 +2619,11 @@ Cover
   padding: 15px 0;
   text-transform: capitalize;
   color: #18181c;
-  font-size: 48px;
+  font-size: 30px;
   font-weight: 700;
 }
 .price_box .price_tag sup {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   top: -15px;
   left: -7px;
@@ -2541,6 +2638,7 @@ Cover
   padding: 7px;
   font-size: 14px;
   font-weight: 400;
+  color: #28624e;
 }
 .price_box .price_footer {
   margin-top: 30px;
@@ -2675,6 +2773,21 @@ Cover
 .table.event_calender tbody {
   background-color: #f0f2f6;
 }
+.testimonial-39191 {
+  background: #efba6c;
+  padding: 50px;
+  font-size: 20px;
+  margin-bottom: 30px;
+  position: relative; }
+  .testimonial-39191:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(239, 186, 108, 0.1);
+    bottom: -20px;
+    right: -20px; }
+
 .table.event_calender tbody td, .table.event_calender tbody th {
   padding: 30px 25px;
   border: 0;
@@ -3090,6 +3203,152 @@ textarea.form-control {
   resize: vertical;
 }
 
+/*faq*/
+/* line 1, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_faq.scss */
+.faq_area {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+@media (max-width: 767px) {
+  /* line 1, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_faq.scss */
+  .faq_area {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+/* line 8, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_faq.scss */
+.faq_area .accordion_heading {
+  margin-bottom: 100px;
+}
+
+@media (max-width: 767px) {
+  /* line 8, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_faq.scss */
+  .faq_area .accordion_heading {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 8, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_faq.scss */
+  .faq_area .accordion_heading {
+    margin-bottom: 30px;
+  }
+}
+
+/* line 16, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_faq.scss */
+.faq_area .accordion_heading h3 {
+  font-size: 42px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  /* line 16, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_faq.scss */
+  .faq_area .accordion_heading h3 {
+    font-size: 28px;
+  }
+}
+
+/* line 30, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_faq.scss */
+.faq_area #accordion .card h5 button {
+  font-size: 22px;
+  font-weight: 400;
+  color: #1F1F1F;
+}
+
+@media (max-width: 767px) {
+  /* line 30, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_faq.scss */
+  .faq_area #accordion .card h5 button {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 30, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_faq.scss */
+  .faq_area #accordion .card h5 button {
+    font-size: 18px;
+  }
+}
+
+/* line 40, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_faq.scss */
+.faq_area #accordion .card h5 button img {
+  margin-right: 15px;
+}
+
+/* line 46, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_faq.scss */
+.faq_area #accordion .card .card-body {
+  padding: 0 0 40px 76px;
+}
+
+@media (max-width: 767px) {
+  /* line 46, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_faq.scss */
+  .faq_area #accordion .card .card-body {
+    padding: 0 20px 10px 20px;
+    font-size: 12px;
+  }
+}
+
+/* line 54, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_faq.scss */
+.faq_area #accordion .card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #28624e;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: .25rem;
+  background: #28624e !important;
+  border: 1px solid #E9E5EC;
+  border: 5px;
+  margin-bottom: 30px;
+  border: 1px solid #E9E5EC;
+}
+
+@media (max-width: 767px) {
+  /* line 54, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_faq.scss */
+  .faq_area #accordion .card {
+    margin-bottom: 10px;
+  }
+}
+
+/* line 77, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_faq.scss */
+.faq_area #accordion .card .card-header {
+  margin-bottom: 0;
+  background-color: #28624e;
+  border-bottom: none;
+  padding: 14px 0 16px 14px;
+}
+
+@media (max-width: 767px) {
+  /* line 83, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_faq.scss */
+  .faq_area #accordion .card .card-header span {
+    display: none;
+  }
+}
+
+/* line 91, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_faq.scss */
+.faq_area .btn-link.focus, .faq_area .btn-link:focus {
+  text-decoration: none;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+/* line 96, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_faq.scss */
+.faq_area .btn-link:hover {
+  color: #0056b3;
+  text-decoration: none;
+  background-color: transparent;
+  border-color: transparent;
+}
 /*  ----------------------------------------------------
 12 progressbar
 -------------------------------------------------------- */
@@ -3158,3 +3417,70 @@ textarea.form-control {
 .accordion_card .card-body {
   font-size: 16px;
 }
+
+.item {
+  border: none;
+  margin-bottom: 30px;
+  border-radius: 4px; }
+  .item a {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    border-radius: 4px; }
+    .item a img {
+      position: relative;
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: .3s all ease-in-out;
+      -o-transition: .3s all ease-in-out;
+      transition: .3s all ease-in-out; }
+  .item .item-wrap {
+    display: block;
+    position: relative; }
+    .item .item-wrap:after {
+      z-index: 2;
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+      visibility: hidden;
+      opacity: 0;
+      -webkit-transition: .3s all ease-in-out;
+      -o-transition: .3s all ease-in-out;
+      transition: .3s all ease-in-out; }
+    .item .item-wrap > span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 3;
+      -webkit-transform: translate(-50%, -50%) scale(0);
+      -ms-transform: translate(-50%, -50%) scale(0);
+      transform: translate(-50%, -50%) scale(0);
+      color: #fff;
+      font-size: 1.7rem;
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transition: .3s all ease;
+      -o-transition: .3s all ease;
+      transition: .3s all ease; }
+    .item .item-wrap:hover:after {
+      opacity: 1;
+      visibility: visible; }
+    .item .item-wrap:hover span {
+      margin-top: 0px;
+      opacity: 1;
+      visibility: visible;
+      -webkit-transform: translate(-50%, -50%) scale(1);
+      -ms-transform: translate(-50%, -50%) scale(1);
+      transform: translate(-50%, -50%) scale(1); }
+  .item:hover a img {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transition: .3s all ease-in-out;
+    -o-transition: .3s all ease-in-out;
+    transition: .3s all ease-in-out; }

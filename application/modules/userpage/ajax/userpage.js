@@ -45,7 +45,7 @@ $(document).ready(function () {
 				var str = data.replace(/\"/g,"");;
 				if (str == "Data berhasil dimasukkan"){
 					swal("Berhasil", str, "success");
-					update("Userpage/daftarworkshop")
+					update("Userpage/aktivitas")
 				} else {
 					document.getElementById('#alert2').style.display = 'block';
 					alert = document.getElementById('#msg');
@@ -53,7 +53,7 @@ $(document).ready(function () {
 				}
     	},
 			error: function (XMLHttpRequest, textStatus, errorThrown) {
-				swal("Status: " + textStatus, "erro");
+				swal("Status: " + textStatus, "error");
 				swal("Error: " + errorThrown, "error");
 			},
 		});

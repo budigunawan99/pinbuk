@@ -20,6 +20,8 @@
 <script src="<?php echo base_url() ?>assets/admin/assets/js/dashboard.js"></script>
 <script src="<?php echo base_url() ?>assets/admin/assets/js/todolist.js"></script>
 <script type="text/javascript" src="<?php echo base_url() ?>assets/sweetalert/sweetalert-master/dist/sweetalert.min.js"></script>
+<script src="<?php echo base_url() ?>assets/lightbox2/dist/js/lightbox-plus-jquery.js"></script>
+<script src="<?php echo base_url() ?>assets/evento/assets/js/jquery.validate.min.js"></script>
 
 <!-- End custom js for this page -->
 <script>
@@ -92,4 +94,10 @@
             })
         });
     })
+</script>
+<script type="text/javascript">
+    <?php
+    include(APPPATH . "/modules/admin/ajax/admin.js");
+
+    ?>
 </script>

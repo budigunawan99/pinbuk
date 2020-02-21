@@ -53,3 +53,12 @@ $route['default_controller'] = 'home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
+//Account Controller
+$route['account/login_view'] = 'account/logindirect';
+$route['account/registrasi_view'] = 'account';
+$route['account/admin_login'] = 'account/admin';
+
+//Userpage Controller
+$route['userpage/aktivitas'] = 'userpage';
+$route['userpage/modul'] = 'userpage';
+$route['userpage/daftarworkshop'] = 'userpage';
