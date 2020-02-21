@@ -2,9 +2,6 @@
 <html lang="en">
 
 <head>
-    <?php
-    $this->load->view("_partials_home/header");
-    ?>
     <!--===============================================================================================-->
     <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
     <!--===============================================================================================-->
@@ -38,7 +35,9 @@
     <script src="<?php echo base_url() ?>assets/form/vendor/countdowntime/countdowntime.js"></script>
     <!--===============================================================================================-->
     <script src="<?php echo base_url() ?>assets/form/js/main.js"></script>
-
+    <?php
+    $this->load->view("_partials_home/header");
+    ?>
     <script>
         function update(z) {
             nav = z;
