@@ -344,6 +344,7 @@ img {
     display: none !important;
   }
 }
+
 /* ----------------Responsive Align ------------------- */
 @media all and (max-width: 767px) {
   .text-center-xs {
@@ -2659,6 +2660,15 @@ Cover
   transition: all ease-in-out 0.4s;
 }
 
+@media (min-width:768px) and (max-width:1199px){
+  .price_box .price_tag{
+    font-size: 13.5px;
+  }
+
+  .price_box .price_header h4 {
+    font-size: 15px;
+  }
+}
 /*  ----------------------------------------------------
 
 /*  ----------------------------------------------------
