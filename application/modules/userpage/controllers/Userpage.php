@@ -58,6 +58,19 @@ class Userpage extends CI_Controller
 		force_download($filename, $data);
 	}
 
+	public function check_price()
+	{
+		$earlybird = "1.700.000 (Anda termasuk dalam 50 pendaftar pertama)";
+		$normal = "2.000.000";
+		$participants = $this->M_userpage->get_registered()->num_rows();
+		if ($participants <= 50) {
+			$harga = $earlybird;
+		} else {
+			$harga = $normal;
+		}
+		echo json_encode($harga);
+	}
+
 	public function input()
 	{
 		$email = $this->input->post('email');
@@ -65,40 +78,42 @@ class Userpage extends CI_Controller
 		$no_hp = $this->input->post('no_hp');
 		$jenis_workshop = $this->input->post('jenis_workshop');
 		$id_user = $this->M_userpage->getIdByEmail($email);
-		if ($this->M_userpage->check_db("daftar_workshop", "id_user", $id_user, "status", "0,1") == true) {
-			$msg = "Pendaftaran gagal ! Anda hanya dapat mengikuti satu workshop saja";
+
+		$earlybird = 1700000;
+		$normal = 2000000;
+		$participants = $this->M_userpage->get_registered()->num_rows();
+		if ($participants <= 50) {
+			$harga = $earlybird;
 		} else {
-			$config['upload_path'] = './uploads/payment';
-			$config['allowed_types'] = 'pdf|jpeg|jpg|png';
-			$config['encrypt_name'] = TRUE;
-			$config['max_size'] = 1000;
+			$harga = $normal;
+		}
+		// if ($this->M_userpage->check_db("daftar_workshop", "id_user", $id_user, "status", "0,1") == true) {
+		// 	$msg = "Anda hanya dapat mengikuti satu workshop saja";
+		// } else {
+		$config['upload_path'] = './uploads/payment';
+		$config['allowed_types'] = 'pdf|jpeg|jpg|png';
+		$config['encrypt_name'] = TRUE;
+		$config['max_size'] = 1000;
 
-			for ($i = 0; $i < 1; $i++) {
-				$_FILES['doc']['name'] = $_FILES['dokumen' . $i]['name'];
-				$_FILES['doc']['type'] = $_FILES['dokumen' . $i]['type'];
-				$_FILES['doc']['tmp_name'] = $_FILES['dokumen' . $i]['tmp_name'];
-				$_FILES['doc']['error'] = $_FILES['dokumen' . $i]['error'];
-				$_FILES['doc']['size'] = $_FILES['dokumen' . $i]['size'];
-
-				$this->load->library('upload', $config);
-				if (!($this->upload->do_upload("doc"))) {
-					$error = array('error' => $this->upload->display_errors());
-					$msg = $error;
-				} else {
-					$data_regis = array(
-						'id_user' => $id_user,
-						'id_workshop' => $jenis_workshop,
-						'alamat' => $alamat,
-						'no_hp' => $no_hp,
-						'bukti_pembayaran' => $this->upload->data('file_name')
-					);
-					$status = $this->M_userpage->insert_data('daftar_workshop', $data_regis);
-					if ($status !== "failed") {
-						$msg = "Data berhasil dimasukkan";
-					}
-				}
+		$this->load->library('upload', $config);
+		if (!($this->upload->do_upload("dokumen0"))) {
+			$error = array('error' => $this->upload->display_errors());
+			$msg = $error;
+		} else {
+			$data_regis = array(
+				'id_user' => $id_user,
+				'id_workshop' => $jenis_workshop,
+				'alamat' => $alamat,
+				'no_hp' => $no_hp,
+				'harga' => $harga,
+				'bukti_pembayaran' => $this->upload->data('file_name')
+			);
+			$status = $this->M_userpage->insert_data('daftar_workshop', $data_regis);
+			if ($status !== "failed") {
+				$msg = "Data berhasil dimasukkan";
 			}
 		}
+		// }
 		echo json_encode($msg);
 	}
 }

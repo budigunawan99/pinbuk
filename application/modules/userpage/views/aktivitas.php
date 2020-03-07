@@ -45,7 +45,8 @@
                              <td>
                                  <div class="event_place">
                                      <h5><?php echo $a->nama ?></h5>
-                                     <h6><?php echo $a->jam_mulai ?> - selesai</h6>                                     
+                                     <h6><?php echo $a->jam_mulai ?> - selesai</h6>
+                                     <h6>Total : <?php echo "Rp".$a->harga?></h6>                                       
                                          <h6>Status :
                                          <?php
                                             $status = $a->status;

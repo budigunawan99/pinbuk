@@ -113,11 +113,6 @@
             });
         });
     </script>
-    <script type="text/javascript">
-        <?php
-        include(APPPATH . "/modules/userpage/ajax/userpage.js");
-        ?>
-    </script>
 
 </head>
 

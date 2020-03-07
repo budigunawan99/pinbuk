@@ -14,7 +14,7 @@
                                     "Pemberdayaan Sosial Ekonomi"
                                 </p>
                                 <p class="cover-date">
-                                    14 - 16 April 2020, Hotel Kaisar
+                                    08 - 10 April 2020, Hotel Kaisar
                                 </p>
                                 <a href="<?php echo site_url() ?>/account" class=" btn btn-primary btn-rounded">
                                     Registrasi
@@ -37,7 +37,7 @@
                                     "INTERNATIONAL SEMINAR ON DIGITAL MICRO FINANCE"
                                 </p>
                                 <p class="cover-date">
-                                    16 April 2020, Hotel Kaisar
+                                    08 April 2020, Hotel Kaisar
                                 </p>
                             </div>
                         </div>
@@ -57,7 +57,7 @@
                                     “Pemberdayaan dan Pengembangan Sosial Ekonomi Masyarakat di Era 4.0”
                                 </p>
                                 <p class="cover-date">
-                                    14 - 15 April 2020, Hotel Kaisar
+                                    09 - 10 April 2020, Hotel Kaisar
                                 </p>
                             </div>
                         </div>
@@ -116,7 +116,7 @@
                         Awal tahun 2020, merupakan waktu yang strategis untuk menggapai tantangan di era 4.0 ini. Masa dimana masyarakat dihadapkan pada tantangan-tantangan terbarukan seperti isu digitalisasi dan komunitas. Menjadi hal yang sangat menarik bila isu-isu tersebut disandingkan dengan aktualisasi isu pemberdayaan Ekonomi dan Keuangan Syariah serta Industri Halal. Pada perkembangannya, ekonomi keuangan syariah khususnya pada sektor lembaga keuangan mikro syariah sudah mempraktekkan gerakan-gerakan pemberdayaan masyarakat, baik di pedesaan, majelis-majelis pengajian, jamaah-jamaah masjid, masyarakat sekitar pesantren serta komunitas-komunitas lainnya di masyarakat. Tak elak perkembangan tersebut, sudah mulai berbasis digital dengan sistem online.
                     </p>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 sec-para">
                     <p style="text-align: justify;">
                         Memasuki semester pertama ditahun 2020 ini, merupakan masa-masa kedewasaan bagi sebuah lembaga pemberdayaan masyarakat yang menyibukkan diri di kancah ekonomi kerakyatan dan lembaga keuangan syariah. Lembaga tersebut kini dikenal dengan nama Yayasan Pusat Inkubasi Bisnis dan Usaha Kecil (PINBUK) Indonesia. Untuk menyongsong Tahun Perak, Insya Allah PINBUK Indonesia akan bersinergi dengan beberapa lembaga pemerintah dan swasta terkait untuk menyelenggarakan Workshop Nasional “Pemberdayaan dan Pengembangan Sosial Ekonomi Masyarakat di Era 4.0”. Mudah-mudahan dengan pertolongan Ilahi dan Rahmat Allah SWT, Sarasehan MILAD PINBUK ke-25 tersebut akan dapat terlaksana dengan lancar atas dukungan sahabat-sahabat sekalian.
                 </div>

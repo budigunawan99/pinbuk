@@ -11,7 +11,8 @@
                             <tr>
                                 <th> ID </th>
                                 <th> Nama </th>
-                                <th> Kelas </th>                            
+                                <th> Kelas </th>
+                                <th> Bayar </th>                             
                                 <th> Bukti Pembayaran </th>                               
                                 <th> Status </th>
                             </tr>
@@ -67,7 +68,8 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td> <?php echo $l->namaworkshop ?> </td>   
+                                    <td> <?php echo $l->namaworkshop ?> </td>  
+                                    <td> Rp<?php echo $l->harga ?>,00 </td>   
                                     <!-- <td> <img src="" class="mb-2 mw-100 w-50 rounded" alt="image"></td> -->
                                     <td> <a class="btn btn-info btn-xs btn-tabl" href="<?php echo base_url() . 'uploads/payment/' . $l->bukti_pembayaran ?>" data-lightbox="<?php echo $l->bukti_pembayaran ?>" data-title="Bukti Pembayaran <?php echo $l->namauser ?>">PREVIEW</a></td>
                                                                      

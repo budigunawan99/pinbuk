@@ -2009,6 +2009,22 @@ footer .newsletter_form li {
     .copyright_footer {
         text-align: center;
     }
+    .sec-para {
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .quotes {
+        font-size: 11px;
+        letter-spacing: 0.5px;
+    }
+}
+
+@media (max-width: 380px) {
+    p {
+        font-size: 10px;
+    }
 }
 
 

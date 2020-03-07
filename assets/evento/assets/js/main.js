@@ -17,30 +17,28 @@
 /*  PRE LOADING
 =============================================== */
 'use strict';
-$(window).load(function () {
+$(window).load(function() {
     $('.loader').delay(500).fadeOut('slow');
 });
 
 
-$(document).ready(function () {
+$(document).ready(function() {
 
     'use strict';
     /* ==============================================
      /*   wow
       =============================================== */
-    var wow = new WOW(
-        {
-            animateClass: 'animated',
-            offset: 10,
-            mobile: true
-        }
-    );
+    var wow = new WOW({
+        animateClass: 'animated',
+        offset: 10,
+        mobile: true
+    });
     wow.init();
     /* ==============================================
         STICKY HEADER
         =============================================== */
 
-    $(window).on('scroll', function () {
+    $(window).on('scroll', function() {
         if ($(window).scrollTop() < 100) {
             $('.header').removeClass('sticky_header');
         } else {
@@ -57,7 +55,7 @@ $(document).ready(function () {
         time: 3000
     });
 
-    $('.countdown').countdown('2020/03/14', function (event) {
+    $('.countdown').countdown('2020/04/08', function(event) {
         $(this).html(
             event.strftime('<div>%w <span>Weeks</span></div>  <div>%d <span>Days</span></div>  <div>%H<span>Hours</span></div> <div>%M<span>Minutes</span></div> <div>%S<span>Seconds</span></div>')
         );
@@ -106,7 +104,7 @@ $(document).ready(function () {
     /* Animated progress bars
      /* ------------------------------------- */
 
-    var waypoints = $('.progress_container').waypoint(function () {
+    var waypoints = $('.progress_container').waypoint(function() {
         $('.progress .progress-bar').progressbar({
             transition_delay: 1000
         });
@@ -124,6 +122,7 @@ MAPS
         var lattuide = map.attr('data-lat');
         var longtuided = map.attr('data-lon');
     }
+
     function init() {
         // Basic options for a simple Google Map
         // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions

@@ -27,7 +27,7 @@ class M_admin extends CI_Model
 
     function getAllUserWorkshop()
     {
-        $query = $this->db->query("select a.nama as namauser, a.email, b.nama as namaworkshop, c.id_daftar, c.no_hp, c.alamat, c.bukti_pembayaran, DATE_FORMAT(c.time_register, '%e/%m/%Y') AS tanggal_daftar, TIME_FORMAT(c.time_register, '%H.%i') AS jam_daftar, c.status from user a, workshop b, daftar_workshop c where a.id = c.id_user AND b.id_workshop = c.id_workshop ORDER BY c.status, c.time_register DESC");
+        $query = $this->db->query("select a.nama as namauser, a.email, b.nama as namaworkshop, c.id_daftar, c.no_hp, c.alamat, c.harga, c.bukti_pembayaran, DATE_FORMAT(c.time_register, '%e/%m/%Y') AS tanggal_daftar, TIME_FORMAT(c.time_register, '%H.%i') AS jam_daftar, c.status from user a, workshop b, daftar_workshop c where a.id = c.id_user AND b.id_workshop = c.id_workshop ORDER BY c.status, c.time_register DESC");
         return $query->result();
     }
 

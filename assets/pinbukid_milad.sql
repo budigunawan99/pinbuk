@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 11 Feb 2020 pada 07.57
+-- Waktu pembuatan: 05 Mar 2020 pada 09.20
 -- Versi server: 10.4.6-MariaDB
 -- Versi PHP: 7.3.9
 
@@ -53,17 +53,36 @@ CREATE TABLE `daftar_workshop` (
   `id_workshop` int(11) NOT NULL,
   `time_register` timestamp NOT NULL DEFAULT current_timestamp(),
   `alamat` varchar(100) NOT NULL,
+  `no_hp` varchar(20) NOT NULL,
+  `harga` varchar(8) NOT NULL,
   `bukti_pembayaran` varchar(100) NOT NULL,
   `status` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- --------------------------------------------------------
+
 --
--- Dumping data untuk tabel `daftar_workshop`
+-- Struktur dari tabel `foto_kegiatan`
 --
 
-INSERT INTO `daftar_workshop` (`id_daftar`, `id_user`, `id_workshop`, `time_register`, `alamat`, `bukti_pembayaran`, `status`) VALUES
-(11, 32, 2, '2020-02-06 17:39:58', 'peunayong', '603a2755fc89719938a744e4395d767d.jpg', 0),
-(12, 32, 1, '2020-02-10 08:52:06', 'prapt', '5321e1d5b5399ba1f51b9a10e44d2a8d.png', 0);
+CREATE TABLE `foto_kegiatan` (
+  `id` int(11) NOT NULL,
+  `nama_gambar` varchar(60) NOT NULL DEFAULT 'default.jpg',
+  `deskripsi` text NOT NULL,
+  `waktu_upload` datetime NOT NULL,
+  `terakhir_diubah` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `foto_kegiatan`
+--
+
+INSERT INTO `foto_kegiatan` (`id`, `nama_gambar`, `deskripsi`, `waktu_upload`, `terakhir_diubah`) VALUES
+(58, '60fee41c5a9c3b6271cd04b55f2aff5c.jpg', 'Arsip PINBUK Nasional', '2020-02-21 12:40:03', '2020-02-21 12:40:03'),
+(59, '29732a77540ea2f60eb419d8da312b94.jpg', 'Arsip PINBUK Nasional', '2020-02-21 12:40:03', '2020-02-21 12:40:03'),
+(60, '26b99a3d1c203960b4f719c7b7e03b4a.jpg', 'Arsip PINBUK Nasional', '2020-02-21 12:40:03', '2020-02-21 12:40:03'),
+(62, '794bb40d85def923583e6fd2541d439c.jpg', 'Arsip PINBUK Nasional', '2020-02-21 12:40:03', '2020-02-21 12:40:03'),
+(64, '24a7a62c78e1192cf83ce01f9019febb.jpg', 'Arsip PINBUK Nasional', '2020-02-21 12:40:03', '2020-02-21 12:40:03');
 
 -- --------------------------------------------------------
 
@@ -85,7 +104,8 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `nama`, `password`, `email`, `code`, `active`) VALUES
-(32, 'Budi Gunawan', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', 'gunawanbudi930@gmail.com', 'SaPgu6m7CXkW', 1);
+(1, 'Budi Gunawan', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', 'gunawanbudi930@gmail.com', 'z8pDe4sUYR35', 1),
+(2, 'Budi Menawan', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', 'budi99@mhs.unsyiah.ac.id', 'Q2DntFScoZOp', 1);
 
 -- --------------------------------------------------------
 
@@ -127,6 +147,12 @@ ALTER TABLE `daftar_workshop`
   ADD PRIMARY KEY (`id_daftar`);
 
 --
+-- Indeks untuk tabel `foto_kegiatan`
+--
+ALTER TABLE `foto_kegiatan`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indeks untuk tabel `user`
 --
 ALTER TABLE `user`
@@ -153,13 +179,13 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT untuk tabel `daftar_workshop`
 --
 ALTER TABLE `daftar_workshop`
-  MODIFY `id_daftar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id_daftar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 
 --
--- AUTO_INCREMENT untuk tabel `user`
+-- AUTO_INCREMENT untuk tabel `foto_kegiatan`
 --
-ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+ALTER TABLE `foto_kegiatan`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=66;
 
 --
 -- AUTO_INCREMENT untuk tabel `workshop`
