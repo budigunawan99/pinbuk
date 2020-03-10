@@ -32,18 +32,31 @@
                                     <form id="form1" method="post" enctype="multipart/form-data" action="<?php echo base_url('index.php/Userpage/input'); ?>">
                                         <div class="tab-content" id="myTabContent">
                                             <div class="tab-pane fade show active" id="tabs-0" role="tabpanel" aria-labelledby="data-mahasiswa">
-                                                <div class="tab-content" id="v-pills-tabContent">
-                                                    <div class="form-group">
-                                                        <label style="color:black;" for="email">Email:</label>
-                                                        <input type="email" name="email" value="<?php echo $this->session->userdata('email_user'); ?>" class="form-control" id="email" readonly="readonly">
+                                                <div class="tab-content" id="v-pills-tabContent">                                    
+                                                    <div class="wrapper-nama">
+                                                        <div class="form-group">
+                                                            <label style="color:black;" for="nama">Nama:</label>
+                                                            <input type="text" name="nama[]" value="<?php echo $this->session->userdata('nama_user'); ?>" class="formdaftar form-control" readonly="readonly">
+                                                            <button style="margin-top: -5px; font-size: 12px;" class="btn-link add_field_button"><i style="margin-right:2px;" class="fa fa-plus"></i> Register as couple</button>
+                                                        </div>
                                                     </div>
-                                                    <div class="form-group">
-                                                        <label style="color:black;" for="alamat">Alamat:</label>
-                                                        <input type="text" name="alamat" class="formdaftar form-control" id="alamat" required>
+                                                    <div class="wrapper-email">
+                                                        <div class="form-group">
+                                                            <label style="color:black;" for="email">Email:</label>
+                                                            <input type="email" name="email[]" value="<?php echo $this->session->userdata('email_user'); ?>" class="formdaftar form-control" readonly="readonly">                                                            
+                                                        </div>
                                                     </div>
-                                                    <div class="form-group">
-                                                        <label style="color:black;" for="no_hp">No HP:</label>
-                                                        <input type="text" name="no_hp" class="formdaftar form-control" id="no_hp" required>
+                                                    <div class="wrapper-alamat">
+                                                        <div class="form-group">
+                                                            <label style="color:black;" for="alamat">Alamat:</label>
+                                                            <input type="text" name="alamat[]" class="formdaftar form-control" id="alamat" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wrapper-no_hp">
+                                                        <div class="form-group">
+                                                            <label style="color:black;" for="no_hp">No HP:</label>
+                                                            <input type="text" name="no_hp[]" class="formdaftar form-control" id="no_hp" required>
+                                                        </div>
                                                     </div>
                                                     <div class="form-group">
                                                         <label style="color:black;" for="workshop">Workshop:</label>
@@ -78,7 +91,7 @@
                                                 <label for="file">Masukkan Scan KTP :</label>
                                                 <input type="file" name="dokumen0" class="form-control" required>
                                             </div> -->
-                                                <div class="alert alert-success" role="alert" id="#alerthrg" style="display:none; width:100%;">                                                   
+                                                <div class="alert alert-success" role="alert" id="#alerthrg" style="display:none; width:100%;">
                                                     <div id="#harga">
                                                     </div>
                                                 </div>

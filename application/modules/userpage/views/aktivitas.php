@@ -46,8 +46,15 @@
                                  <div class="event_place">
                                      <h5><?php echo $a->nama ?></h5>
                                      <h6><?php echo $a->jam_mulai ?> - selesai</h6>
-                                     <h6>Total : <?php echo "Rp".$a->harga?></h6>                                       
-                                         <h6>Status :
+                                     <h6>Total : <?php echo "Rp".$a->harga?></h6>                                     
+                                     <?php
+                                        if($partner->num_rows() > 0){
+                                            foreach ($partner->result() as $p) {
+                                                echo "<h6>Partner : ".$p->email."</h6> ";
+                                            }
+                                        }
+                                     ?>                                                                            
+                                     <h6>Status :
                                          <?php
                                             $status = $a->status;
                                             if ($status == 0) {
@@ -58,7 +65,7 @@
                                                 echo " <span style='background-color: #f44336;color: white;'>rejected</span>";
                                             }
                                             ?>     
-                                            </h6>                                
+                                     </h6>                                                                                                         
                                  </div>
                              </td>
                          </tr>

@@ -27,6 +27,7 @@ class Registered_user extends CI_Controller
 	public function index()
 	{
 		$data['list'] = $this->M_admin->getAllUserWorkshop();
+		$data['partner'] = $this->M_admin->getPartner();
 		$content = array('content' => $this->load->view('registered_user', $data, true));
 		$this->load->view('v_admin', $content);
 	}
@@ -35,10 +36,14 @@ class Registered_user extends CI_Controller
 	{
 		$iddaftar = $this->input->post('iddaftar');
 		$newstatus = $this->input->post('statusto');
+		$iduser = $this->M_admin->getIdUserByIdDaftar($iddaftar);
 		$data_status = array(
 			'status' => $newstatus
 		);
-		$this->M_admin->update_status('daftar_workshop', $iddaftar, $data_status);
+		$this->M_admin->update_status('daftar_workshop', 'id_daftar', $iddaftar, $data_status);
+		if($this->M_admin->getPartnerById($iduser)->num_rows() > 0){
+			$this->M_admin->update_status('partner_daftar_workshop', 'id_partner', $iduser, $data_status);
+		}
 		$msg = "Status user berhasil diganti";
 		echo json_encode($msg);
 	}
@@ -46,6 +51,7 @@ class Registered_user extends CI_Controller
 	public function export()
 	{
 		$list = $this->M_admin->getAcceptedUserWorkshop();
+		$listpartner = $this->M_admin->getPartner();
 		$spreadsheet = new Spreadsheet;
 
 		$spreadsheet->setActiveSheetIndex(0)
@@ -58,7 +64,11 @@ class Registered_user extends CI_Controller
 			->setCellValue('G1', 'Bukti Pembayaran')
 			->setCellValue('H1', 'Tanggal Register')
 			->setCellValue('I1', 'Jam Register')
-			->setCellValue('J1', 'Status');
+			->setCellValue('J1', 'Status')
+			->setCellValue('K1', 'Nama Partner')
+			->setCellValue('L1', 'Email Partner')
+			->setCellValue('M1', 'No HP Partner')
+			->setCellValue('N1', 'Alamat Partner');
 
 		$kolom = 2;
 		$nomor = 1;
@@ -73,9 +83,26 @@ class Registered_user extends CI_Controller
 		$spreadsheet->getActiveSheet()->getColumnDimension('H')->setWidth(20);
 		$spreadsheet->getActiveSheet()->getColumnDimension('I')->setWidth(20);
 		$spreadsheet->getActiveSheet()->getColumnDimension('J')->setWidth(20);
+		$spreadsheet->getActiveSheet()->getColumnDimension('K')->setWidth(20);
+		$spreadsheet->getActiveSheet()->getColumnDimension('L')->setWidth(20);
+		$spreadsheet->getActiveSheet()->getColumnDimension('M')->setWidth(20);
+		$spreadsheet->getActiveSheet()->getColumnDimension('N')->setWidth(20);
 
 		foreach ($list as $pengguna) {
 			$status = 'Diterima';
+			foreach ($listpartner as $partner){
+				if ($partner->id_partner == $pengguna->id_user){
+					$namapartner = $partner->nama;
+					$emailpartner = $partner->email;
+					$nohppartner = $partner->no_hp;
+					$alamatpartner = $partner->alamat;
+				}else{
+					$namapartner = '-';
+					$emailpartner = '-';
+					$nohppartner = '-';
+					$alamatpartner = '-';
+				}
+			}
 			$spreadsheet->setActiveSheetIndex(0)
 				->setCellValue('A' . $kolom, $pengguna->id_daftar)
 				->setCellValue('B' . $kolom, $pengguna->namauser)
@@ -86,7 +113,11 @@ class Registered_user extends CI_Controller
 				->setCellValue('G' . $kolom, $pengguna->bukti_pembayaran)
 				->setCellValue('H' . $kolom, $pengguna->tanggal_daftar)
 				->setCellValue('I' . $kolom, $pengguna->jam_daftar)
-				->setCellValue('J' . $kolom, $status);
+				->setCellValue('J' . $kolom, $status)
+				->setCellValue('K' . $kolom, $namapartner)
+				->setCellValue('L' . $kolom, $emailpartner)
+				->setCellValue('M' . $kolom, $nohppartner)				
+				->setCellValue('N' . $kolom, $alamatpartner);
 
 			$kolom++;
 			$nomor++;

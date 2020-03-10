@@ -33,6 +33,7 @@ class Userpage extends CI_Controller
 		$id = $this->session->userdata('id_user');
 		$data['av_activity'] = $this->M_userpage->check_db_a("daftar_workshop", "id_user", $id);
 		$data['activity'] = $this->M_userpage->getUserWorkshop($id);
+		$data['partner'] = $this->M_userpage->get_partner($id);
 		$content = $this->load->view('aktivitas', $data, true);
 		$this->output->set_output($content);
 	}
@@ -58,34 +59,67 @@ class Userpage extends CI_Controller
 		force_download($filename, $data);
 	}
 
+	
 	public function check_price()
 	{
-		$earlybird = "1.700.000 (Anda termasuk dalam 50 pendaftar pertama)";
-		$normal = "2.000.000";
-		$participants = $this->M_userpage->get_registered()->num_rows();
-		if ($participants <= 50) {
-			$harga = $earlybird;
+		$length = $this->input->post('jmlpeserta');
+
+		$earlybird = number_format(1700000)." (Anda termasuk dalam 50 pendaftar pertama)";
+		$normal = number_format(2000000);
+		$couplepromo = number_format(3000000)." (Anda termasuk dalam 25 pasangan pertama)";
+		$coupleprice = number_format(4000000);
+
+		if ($length > 1) {
+			$couple = $this->M_userpage->get_registered_couple()->num_rows();
+			if ($couple <= 25) {
+				$harga = $couplepromo;
+			} else {
+				$harga = $coupleprice;
+			}
 		} else {
-			$harga = $normal;
+
+			$participants = $this->M_userpage->get_registered()->num_rows();
+			if ($participants <= 50) {
+				$harga = $earlybird;
+			} else {
+				$harga = $normal;
+			}
 		}
 		echo json_encode($harga);
 	}
 
 	public function input()
 	{
+		$nama = $this->input->post('nama');
 		$email = $this->input->post('email');
 		$alamat = $this->input->post('alamat');
 		$no_hp = $this->input->post('no_hp');
 		$jenis_workshop = $this->input->post('jenis_workshop');
-		$id_user = $this->M_userpage->getIdByEmail($email);
+		$id_user = $this->M_userpage->getIdByEmail($email[0]);
 
-		$earlybird = 1700000;
-		$normal = 2000000;
-		$participants = $this->M_userpage->get_registered()->num_rows();
-		if ($participants <= 50) {
-			$harga = $earlybird;
+		$length = sizeof($nama);
+		$data_regis = array();
+
+		$earlybird = number_format(1700000);
+		$normal = number_format(2000000);
+		$couplepromo = number_format(3000000);
+		$coupleprice = number_format(4000000);
+
+		if ($length > 1) {
+			$couple = $this->M_userpage->get_registered_couple()->num_rows();
+			if ($couple <= 25) {
+				$harga = $couplepromo;
+			} else {
+				$harga = $coupleprice;
+			}
 		} else {
-			$harga = $normal;
+
+			$participants = $this->M_userpage->get_registered()->num_rows();
+			if ($participants <= 50) {
+				$harga = $earlybird;
+			} else {
+				$harga = $normal;
+			}
 		}
 		// if ($this->M_userpage->check_db("daftar_workshop", "id_user", $id_user, "status", "0,1") == true) {
 		// 	$msg = "Anda hanya dapat mengikuti satu workshop saja";
@@ -100,17 +134,45 @@ class Userpage extends CI_Controller
 			$error = array('error' => $this->upload->display_errors());
 			$msg = $error;
 		} else {
-			$data_regis = array(
-				'id_user' => $id_user,
-				'id_workshop' => $jenis_workshop,
-				'alamat' => $alamat,
-				'no_hp' => $no_hp,
-				'harga' => $harga,
-				'bukti_pembayaran' => $this->upload->data('file_name')
-			);
-			$status = $this->M_userpage->insert_data('daftar_workshop', $data_regis);
-			if ($status !== "failed") {
-				$msg = "Data berhasil dimasukkan";
+			for ($i = 0; $i < $length; $i++) {
+				if ($i == 1) {
+					$data_regis[$i] = array(
+						'id_partner' => $id_user,
+						'nama' => $nama[$i],
+						'email' => $email[$i],
+						'alamat' => $alamat[$i],
+						'no_hp' => $no_hp[$i]
+					);
+					break;
+				}
+				$data_regis[$i] = array(
+					'id_user' => $id_user,
+					'id_workshop' => $jenis_workshop,
+					'alamat' => $alamat[$i],
+					'no_hp' => $no_hp[$i],
+					'harga' => $harga,
+					'bukti_pembayaran' => $this->upload->data('file_name')
+				);
+			}
+
+			$status = array();
+
+			for ($i = 0; $i < $length; $i++) {
+				if ($i == 1) {
+					$status[$i] = $this->M_userpage->insert_data('partner_daftar_workshop', $data_regis[$i]);
+					break;
+				}
+				$status[$i] = $this->M_userpage->insert_data('daftar_workshop', $data_regis[$i]);
+			}
+
+			if ($length > 1) {
+				if ($status[0] !== "failed" && $status[1] !== "failed") {
+					$msg = "Data berhasil dimasukkan";
+				}
+			} else {
+				if ($status[0] !== "failed") {
+					$msg = "Data berhasil dimasukkan";
+				}
 			}
 		}
 		// }

@@ -68,8 +68,8 @@ class Account extends CI_Controller
             $msg = "Fill the form again !";
             // redirect(site_url('registrasi'));
         } else {
-            $nama = $this->input->post('name');
-            $email = $this->input->post('email');
+            $nama = $this->input->post('name', TRUE);
+            $email = $this->input->post('email', TRUE);
             $password = hash('SHA256', $this->input->post('password'));
             // $data['nama']   =    $this->input->post('name');
             $data['nama'] = $nama;

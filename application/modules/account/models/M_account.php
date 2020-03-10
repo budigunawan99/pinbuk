@@ -33,17 +33,17 @@
         }
 
         public function checkActivate($email){
-            $query = $this->db->query('SELECT active FROM user where email = "' . $email . '"');
+            $query = $this->db->query('SELECT active FROM user where email = ?', $email);
             return $query->row()->active;
         }
 
         public function getIdByEmail($email){
-            $query = $this->db->query('SELECT id FROM user where email = "' . $email . '"');
+            $query = $this->db->query('SELECT id FROM user where email = ?', $email);
             return $query->row()->id;
         }
 
         public function getNamaByEmail($email){
-            $query = $this->db->query('SELECT nama FROM user where email = "' . $email . '"');
+            $query = $this->db->query('SELECT nama FROM user where email = ?', $email);
             return $query->row()->nama;
         }
 
